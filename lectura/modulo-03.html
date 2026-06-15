@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 03 — Desarrollo Motor · Aula Creativa</title>
+<style>
+  :root{--ac:#54C3B0;--ink:#2D2A45;--soft:#5B5773;--line:#E9E4EF;--bg:#F7F9FC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+  .top{background:var(--ac);color:#fff;padding:26px 22px;position:sticky;top:0;z-index:5}
+  .top .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .top a.back{color:#fff;font-weight:700;opacity:.9;text-decoration:none}
+  .top h1{font-size:1.3rem;flex:1;min-width:200px}
+  .top .dl{background:#fff;color:var(--ac);font-weight:800;padding:10px 18px;border-radius:40px;text-decoration:none}
+  .layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:240px 1fr;gap:30px;padding:26px 22px}
+  nav{position:sticky;top:110px;align-self:start;max-height:80vh;overflow:auto;border-right:1px solid var(--line);padding-right:14px}
+  nav a{display:block;font-size:.82rem;color:var(--soft);text-decoration:none;padding:6px 8px;border-radius:8px}
+  nav a:hover{background:var(--bg);color:var(--ink)}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:26px;box-shadow:0 6px 20px rgba(45,42,69,.05)}
+  .eyebrow{color:var(--ac);font-weight:800;font-size:.75rem;letter-spacing:1px;margin-bottom:6px}
+  .plan h2{font-size:1.5rem;margin-bottom:14px}
+  .ficha{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .ficha div{padding:12px 16px;border-right:1px solid var(--line)}
+  .ficha div:last-child{border-right:none}
+  .ficha span{display:block;font-size:.65rem;color:var(--soft);font-weight:700;letter-spacing:.5px}
+  .ficha b{font-size:1rem}
+  .lbl{color:var(--ac);font-weight:800;font-size:.8rem;letter-spacing:.5px;margin:16px 0 6px}
+  .box{background:color-mix(in srgb,var(--ac) 9%,#fff);border-left:3px solid var(--ac);
+        border-radius:10px;padding:12px 16px;margin:14px 0}
+  .box.soft{margin:10px 0}
+  .box .bl{color:var(--ac);font-weight:800;font-size:.72rem;letter-spacing:.6px;margin-bottom:3px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0}
+  ul.dot{list-style:none} ul.dot li{padding-left:16px;position:relative;margin-bottom:3px}
+  ul.dot li:before{content:'•';color:var(--ac);position:absolute;left:0;font-weight:900}
+  ol.steps{padding-left:4px;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;position:relative;margin-bottom:9px}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;background:var(--ac);color:#fff;
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:800}
+  @media(max-width:820px){.layout{grid-template-columns:1fr}nav{display:none}.two{grid-template-columns:1fr}}
+</style></head><body>
+  <div class="top"><div class="wrap">
+    <a class="back" href="../index.html">← Volver</a>
+    <h1>Módulo 03 · Desarrollo Motor</h1>
+    <a class="dl" href="../pdf/03-desarrollo-motor.pdf" download>⬇ Descargar PDF</a>
+  </div></div>
+  <div class="layout">
+    <nav><a href="#plan-1">01. Estaciones de juego: saltos con una cuerda larga</a><a href="#plan-2">02. Equilibrio usando colchonetas</a><a href="#plan-3">03. Jugamos a gateo con ula-ulas</a><a href="#plan-4">04. Exploración libre acompañada para lanzar y atrapar</a><a href="#plan-5">05. Descubrimos correr y frenar con una cuerda larga</a><a href="#plan-6">06. Cuento en acción: rodar con colchonetas</a><a href="#plan-7">07. Esquivar usando ula-ulas</a><a href="#plan-8">08. Jugamos a trepar con sacos de tela</a><a href="#plan-9">09. Estaciones de juego para reptar</a><a href="#plan-10">10. Descubrimos patear con colchonetas</a><a href="#plan-11">11. Juego en ronda: marcha animal con ula-ulas</a><a href="#plan-12">12. Girar y parar usando sacos de tela</a><a href="#plan-13">13. Jugamos a avanzar en cuadrupedia con una cuerda larga</a><a href="#plan-14">14. Cuento en acción para saltar a la cuerda</a><a href="#plan-15">15. Descubrimos saltos con ula-ulas</a><a href="#plan-16">16. Reto sensorial dirigido: equilibrio con sacos de tela</a><a href="#plan-17">17. Gateo usando una cuerda larga</a><a href="#plan-18">18. Jugamos a lanzar y atrapar con colchonetas</a><a href="#plan-19">19. Juego en ronda para correr y frenar</a><a href="#plan-20">20. Descubrimos rodar con sacos de tela</a><a href="#plan-21">21. Desafío por parejas: esquivar con una cuerda larga</a><a href="#plan-22">22. Trepar usando colchonetas</a><a href="#plan-23">23. Jugamos a reptar con ula-ulas</a><a href="#plan-24">24. Reto sensorial dirigido para patear</a><a href="#plan-25">25. Descubrimos marcha animal con una cuerda larga</a><a href="#plan-26">26. Circuito guiado: girar y parar con colchonetas</a><a href="#plan-27">27. Avanzar en cuadrupedia usando ula-ulas</a><a href="#plan-28">28. Jugamos a saltar a la cuerda con sacos de tela</a><a href="#plan-29">29. Desafío por parejas para saltos</a><a href="#plan-30">30. Descubrimos equilibrio con colchonetas</a><a href="#plan-31">31. Juego de mesa colectivo: gateo con ula-ulas</a><a href="#plan-32">32. Lanzar y atrapar usando sacos de tela</a><a href="#plan-33">33. Jugamos a correr y frenar con una cuerda larga</a><a href="#plan-34">34. Circuito guiado para rodar</a><a href="#plan-35">35. Descubrimos esquivar con ula-ulas</a><a href="#plan-36">36. Exploración libre acompañada: trepar con sacos de tela</a><a href="#plan-37">37. Reptar usando una cuerda larga</a><a href="#plan-38">38. Jugamos a patear con colchonetas</a><a href="#plan-39">39. Juego de mesa colectivo para marcha animal</a><a href="#plan-40">40. Descubrimos girar y parar con sacos de tela</a><a href="#plan-41">41. Estaciones de juego: avanzar en cuadrupedia con una cuerda larga</a><a href="#plan-42">42. Saltar a la cuerda usando colchonetas</a><a href="#plan-43">43. Jugamos a saltos con ula-ulas</a><a href="#plan-44">44. Exploración libre acompañada para equilibrio</a><a href="#plan-45">45. Descubrimos gateo con una cuerda larga</a><a href="#plan-46">46. Cuento en acción: lanzar y atrapar con colchonetas</a><a href="#plan-47">47. Correr y frenar usando ula-ulas</a><a href="#plan-48">48. Jugamos a rodar con sacos de tela</a><a href="#plan-49">49. Estaciones de juego para esquivar</a><a href="#plan-50">50. Descubrimos trepar con colchonetas</a></nav>
+    <main>
+      <article class="plan" id="plan-1">
+        <div class="eyebrow">MÓDULO 03 · PLAN 01</div>
+        <h2>Estaciones de juego: saltos con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre coordinar el salto con ambos pies a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de saltar con los dos pies juntos.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saltar con los dos pies juntos usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a saltar con los dos pies juntos.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de saltos.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saltar con los dos pies juntos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir saltar con los dos pies juntos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-2">
+        <div class="eyebrow">MÓDULO 03 · PLAN 02</div>
+        <h2>Equilibrio usando colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de mantener el equilibrio del cuerpo.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a caminar sobre una línea sin caer usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo caminar sobre una línea sin caer en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a caminar sobre una línea sin caer».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en caminar sobre una línea sin caer: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren caminar sobre una línea sin caer más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-3">
+        <div class="eyebrow">MÓDULO 03 · PLAN 03</div>
+        <h2>Jugamos a gateo con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan fortalecer la coordinación al gatear con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre gateo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a gatear bajo un obstáculo usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para gatear bajo un obstáculo cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en gatear bajo un obstáculo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de gatear bajo un obstáculo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-4">
+        <div class="eyebrow">MÓDULO 03 · PLAN 04</div>
+        <h2>Exploración libre acompañada para lanzar y atrapar</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar ojo y mano al lanzar respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre lanzar y atrapar.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lanzar y atrapar una pelota usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede lanzar y atrapar una pelota?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró lanzar y atrapar una pelota.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lanzar y atrapar una pelota: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda lanzar y atrapar una pelota con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sacos de tela preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-5">
+        <div class="eyebrow">MÓDULO 03 · PLAN 05</div>
+        <h2>Descubrimos correr y frenar con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover controlar el cuerpo en movimiento en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre correr y frenar.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a correr y detenerse a la señal usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a correr y detenerse a la señal sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr correr y detenerse a la señal en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en correr y detenerse a la señal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al correr y detenerse a la señal.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a correr y detenerse a la señal.</div>
+      </article>
+      <article class="plan" id="plan-6">
+        <div class="eyebrow">MÓDULO 03 · PLAN 06</div>
+        <h2>Cuento en acción: rodar con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre controlar el giro del cuerpo a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a rodar sobre una colchoneta usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita rodar sobre una colchoneta.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a rodar sobre una colchoneta.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr rodar.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en rodar sobre una colchoneta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar colchonetas no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-7">
+        <div class="eyebrow">MÓDULO 03 · PLAN 07</div>
+        <h2>Esquivar usando ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de orientarse en el espacio.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esquivar obstáculos al avanzar usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a esquivar obstáculos al avanzar.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esquivar obstáculos al avanzar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que esquivar obstáculos al avanzar se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-8">
+        <div class="eyebrow">MÓDULO 03 · PLAN 08</div>
+        <h2>Jugamos a trepar con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan ganar fuerza y seguridad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trepar y bajar con cuidado usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón trepar y bajar con cuidado prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al trepar y bajar con cuidado.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trepar y bajar con cuidado: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para trepar y bajar con cuidado en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de trepar y bajar con cuidado.</div>
+      </article>
+      <article class="plan" id="plan-9">
+        <div class="eyebrow">MÓDULO 03 · PLAN 09</div>
+        <h2>Estaciones de juego para reptar</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar brazos y piernas respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de reptar como un soldadito.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reptar como un soldadito usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a reptar como un soldadito.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de reptar.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reptar como un soldadito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir reptar como un soldadito.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-10">
+        <div class="eyebrow">MÓDULO 03 · PLAN 10</div>
+        <h2>Descubrimos patear con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover coordinar la pierna al patear en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de patear una pelota hacia una meta.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a patear una pelota hacia una meta usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo patear una pelota hacia una meta en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a patear una pelota hacia una meta».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en patear una pelota hacia una meta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren patear una pelota hacia una meta más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-11">
+        <div class="eyebrow">MÓDULO 03 · PLAN 11</div>
+        <h2>Juego en ronda: marcha animal con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre explorar formas de moverse a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de desplazarse imitando animales.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a desplazarse imitando animales usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para desplazarse imitando animales cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en desplazarse imitando animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de desplazarse imitando animales.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-12">
+        <div class="eyebrow">MÓDULO 03 · PLAN 12</div>
+        <h2>Girar y parar usando sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de controlar el equilibrio tras el giro.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a girar y quedarse como estatua usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede girar y quedarse como estatua?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró girar y quedarse como estatua.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en girar y quedarse como estatua: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda girar y quedarse como estatua con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-13">
+        <div class="eyebrow">MÓDULO 03 · PLAN 13</div>
+        <h2>Jugamos a avanzar en cuadrupedia con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan fortalecer el tronco y los brazos con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre avanzar en cuadrupedia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a avanzar apoyando manos y pies usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a avanzar apoyando manos y pies sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr avanzar apoyando manos y pies en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en avanzar apoyando manos y pies: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al avanzar apoyando manos y pies.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-14">
+        <div class="eyebrow">MÓDULO 03 · PLAN 14</div>
+        <h2>Cuento en acción para saltar a la cuerda</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar el salto con un obstáculo respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre saltar a la cuerda.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar por encima de una cuerda usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita pasar por encima de una cuerda.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a pasar por encima de una cuerda.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr saltar a la cuerda.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar por encima de una cuerda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-15">
+        <div class="eyebrow">MÓDULO 03 · PLAN 15</div>
+        <h2>Descubrimos saltos con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover coordinar el salto con ambos pies en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre saltos.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saltar con los dos pies juntos usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a saltar con los dos pies juntos.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saltar con los dos pies juntos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que saltar con los dos pies juntos se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-16">
+        <div class="eyebrow">MÓDULO 03 · PLAN 16</div>
+        <h2>Reto sensorial dirigido: equilibrio con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre mantener el equilibrio del cuerpo a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a caminar sobre una línea sin caer usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón caminar sobre una línea sin caer prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al caminar sobre una línea sin caer.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en caminar sobre una línea sin caer: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para caminar sobre una línea sin caer en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sacos de tela preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-17">
+        <div class="eyebrow">MÓDULO 03 · PLAN 17</div>
+        <h2>Gateo usando una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de fortalecer la coordinación al gatear.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a gatear bajo un obstáculo usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a gatear bajo un obstáculo.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de gateo.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en gatear bajo un obstáculo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir gatear bajo un obstáculo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a gatear bajo un obstáculo.</div>
+      </article>
+      <article class="plan" id="plan-18">
+        <div class="eyebrow">MÓDULO 03 · PLAN 18</div>
+        <h2>Jugamos a lanzar y atrapar con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar ojo y mano al lanzar con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lanzar y atrapar una pelota usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo lanzar y atrapar una pelota en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a lanzar y atrapar una pelota».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lanzar y atrapar una pelota: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren lanzar y atrapar una pelota más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar colchonetas no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-19">
+        <div class="eyebrow">MÓDULO 03 · PLAN 19</div>
+        <h2>Juego en ronda para correr y frenar</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular controlar el cuerpo en movimiento respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de correr y detenerse a la señal.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a correr y detenerse a la señal usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para correr y detenerse a la señal cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en correr y detenerse a la señal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de correr y detenerse a la señal.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-20">
+        <div class="eyebrow">MÓDULO 03 · PLAN 20</div>
+        <h2>Descubrimos rodar con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover controlar el giro del cuerpo en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de rodar sobre una colchoneta.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a rodar sobre una colchoneta usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede rodar sobre una colchoneta?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró rodar sobre una colchoneta.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en rodar sobre una colchoneta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda rodar sobre una colchoneta con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de rodar sobre una colchoneta.</div>
+      </article>
+      <article class="plan" id="plan-21">
+        <div class="eyebrow">MÓDULO 03 · PLAN 21</div>
+        <h2>Desafío por parejas: esquivar con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre orientarse en el espacio a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de esquivar obstáculos al avanzar.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esquivar obstáculos al avanzar usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a esquivar obstáculos al avanzar sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr esquivar obstáculos al avanzar en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esquivar obstáculos al avanzar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al esquivar obstáculos al avanzar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-22">
+        <div class="eyebrow">MÓDULO 03 · PLAN 22</div>
+        <h2>Trepar usando colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de ganar fuerza y seguridad.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trepar y bajar con cuidado usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita trepar y bajar con cuidado.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a trepar y bajar con cuidado.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr trepar.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trepar y bajar con cuidado: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-23">
+        <div class="eyebrow">MÓDULO 03 · PLAN 23</div>
+        <h2>Jugamos a reptar con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar brazos y piernas con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre reptar.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reptar como un soldadito usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a reptar como un soldadito.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reptar como un soldadito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que reptar como un soldadito se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-24">
+        <div class="eyebrow">MÓDULO 03 · PLAN 24</div>
+        <h2>Reto sensorial dirigido para patear</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar la pierna al patear respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre patear.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a patear una pelota hacia una meta usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón patear una pelota hacia una meta prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al patear una pelota hacia una meta.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en patear una pelota hacia una meta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para patear una pelota hacia una meta en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-25">
+        <div class="eyebrow">MÓDULO 03 · PLAN 25</div>
+        <h2>Descubrimos marcha animal con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover explorar formas de moverse en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre marcha animal.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a desplazarse imitando animales usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a desplazarse imitando animales.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de marcha animal.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en desplazarse imitando animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir desplazarse imitando animales.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-26">
+        <div class="eyebrow">MÓDULO 03 · PLAN 26</div>
+        <h2>Circuito guiado: girar y parar con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre controlar el equilibrio tras el giro a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a girar y quedarse como estatua usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo girar y quedarse como estatua en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a girar y quedarse como estatua».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en girar y quedarse como estatua: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren girar y quedarse como estatua más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-27">
+        <div class="eyebrow">MÓDULO 03 · PLAN 27</div>
+        <h2>Avanzar en cuadrupedia usando ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de fortalecer el tronco y los brazos.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a avanzar apoyando manos y pies usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para avanzar apoyando manos y pies cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en avanzar apoyando manos y pies: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de avanzar apoyando manos y pies.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-28">
+        <div class="eyebrow">MÓDULO 03 · PLAN 28</div>
+        <h2>Jugamos a saltar a la cuerda con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar el salto con un obstáculo con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar por encima de una cuerda usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede pasar por encima de una cuerda?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró pasar por encima de una cuerda.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar por encima de una cuerda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda pasar por encima de una cuerda con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sacos de tela preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-29">
+        <div class="eyebrow">MÓDULO 03 · PLAN 29</div>
+        <h2>Desafío por parejas para saltos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar el salto con ambos pies respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de saltar con los dos pies juntos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saltar con los dos pies juntos usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a saltar con los dos pies juntos sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr saltar con los dos pies juntos en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saltar con los dos pies juntos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al saltar con los dos pies juntos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a saltar con los dos pies juntos.</div>
+      </article>
+      <article class="plan" id="plan-30">
+        <div class="eyebrow">MÓDULO 03 · PLAN 30</div>
+        <h2>Descubrimos equilibrio con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover mantener el equilibrio del cuerpo en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de caminar sobre una línea sin caer.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a caminar sobre una línea sin caer usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita caminar sobre una línea sin caer.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a caminar sobre una línea sin caer.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr equilibrio.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en caminar sobre una línea sin caer: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar colchonetas no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-31">
+        <div class="eyebrow">MÓDULO 03 · PLAN 31</div>
+        <h2>Juego de mesa colectivo: gateo con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre fortalecer la coordinación al gatear a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de gatear bajo un obstáculo.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a gatear bajo un obstáculo usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a gatear bajo un obstáculo.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en gatear bajo un obstáculo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que gatear bajo un obstáculo se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-32">
+        <div class="eyebrow">MÓDULO 03 · PLAN 32</div>
+        <h2>Lanzar y atrapar usando sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de coordinar ojo y mano al lanzar.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lanzar y atrapar una pelota usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón lanzar y atrapar una pelota prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al lanzar y atrapar una pelota.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lanzar y atrapar una pelota: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para lanzar y atrapar una pelota en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de lanzar y atrapar una pelota.</div>
+      </article>
+      <article class="plan" id="plan-33">
+        <div class="eyebrow">MÓDULO 03 · PLAN 33</div>
+        <h2>Jugamos a correr y frenar con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan controlar el cuerpo en movimiento con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre correr y frenar.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a correr y detenerse a la señal usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a correr y detenerse a la señal.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de correr y frenar.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en correr y detenerse a la señal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir correr y detenerse a la señal.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-34">
+        <div class="eyebrow">MÓDULO 03 · PLAN 34</div>
+        <h2>Circuito guiado para rodar</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular controlar el giro del cuerpo respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre rodar.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a rodar sobre una colchoneta usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo rodar sobre una colchoneta en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a rodar sobre una colchoneta».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en rodar sobre una colchoneta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren rodar sobre una colchoneta más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-35">
+        <div class="eyebrow">MÓDULO 03 · PLAN 35</div>
+        <h2>Descubrimos esquivar con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover orientarse en el espacio en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre esquivar.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esquivar obstáculos al avanzar usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para esquivar obstáculos al avanzar cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esquivar obstáculos al avanzar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de esquivar obstáculos al avanzar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-36">
+        <div class="eyebrow">MÓDULO 03 · PLAN 36</div>
+        <h2>Exploración libre acompañada: trepar con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre ganar fuerza y seguridad a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trepar y bajar con cuidado usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede trepar y bajar con cuidado?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró trepar y bajar con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trepar y bajar con cuidado: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda trepar y bajar con cuidado con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-37">
+        <div class="eyebrow">MÓDULO 03 · PLAN 37</div>
+        <h2>Reptar usando una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de coordinar brazos y piernas.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reptar como un soldadito usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a reptar como un soldadito sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr reptar como un soldadito en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reptar como un soldadito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al reptar como un soldadito.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-38">
+        <div class="eyebrow">MÓDULO 03 · PLAN 38</div>
+        <h2>Jugamos a patear con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar la pierna al patear con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a patear una pelota hacia una meta usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita patear una pelota hacia una meta.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a patear una pelota hacia una meta.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr patear.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en patear una pelota hacia una meta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-39">
+        <div class="eyebrow">MÓDULO 03 · PLAN 39</div>
+        <h2>Juego de mesa colectivo para marcha animal</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular explorar formas de moverse respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de desplazarse imitando animales.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a desplazarse imitando animales usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a desplazarse imitando animales.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en desplazarse imitando animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que desplazarse imitando animales se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-40">
+        <div class="eyebrow">MÓDULO 03 · PLAN 40</div>
+        <h2>Descubrimos girar y parar con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover controlar el equilibrio tras el giro en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de girar y quedarse como estatua.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a girar y quedarse como estatua usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón girar y quedarse como estatua prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al girar y quedarse como estatua.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en girar y quedarse como estatua: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para girar y quedarse como estatua en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sacos de tela preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-41">
+        <div class="eyebrow">MÓDULO 03 · PLAN 41</div>
+        <h2>Estaciones de juego: avanzar en cuadrupedia con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre fortalecer el tronco y los brazos a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de avanzar apoyando manos y pies.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a avanzar apoyando manos y pies usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a avanzar apoyando manos y pies.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de avanzar en cuadrupedia.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en avanzar apoyando manos y pies: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir avanzar apoyando manos y pies.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a avanzar apoyando manos y pies.</div>
+      </article>
+      <article class="plan" id="plan-42">
+        <div class="eyebrow">MÓDULO 03 · PLAN 42</div>
+        <h2>Saltar a la cuerda usando colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de coordinar el salto con un obstáculo.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar por encima de una cuerda usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo pasar por encima de una cuerda en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a pasar por encima de una cuerda».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar por encima de una cuerda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren pasar por encima de una cuerda más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar colchonetas no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-43">
+        <div class="eyebrow">MÓDULO 03 · PLAN 43</div>
+        <h2>Jugamos a saltos con ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar el salto con ambos pies con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre saltos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saltar con los dos pies juntos usando ula-ulas.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta ula-ulas en el centro y explica que lo usaremos para saltar con los dos pies juntos cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con ula-ulas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saltar con los dos pies juntos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de ula-ulas, manteniendo la consigna de saltar con los dos pies juntos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-44">
+        <div class="eyebrow">MÓDULO 03 · PLAN 44</div>
+        <h2>Exploración libre acompañada para equilibrio</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular mantener el equilibrio del cuerpo respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre equilibrio.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a caminar sobre una línea sin caer usando sacos de tela.</li><li>Dispón sacos de tela sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede caminar sobre una línea sin caer?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró caminar sobre una línea sin caer.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en caminar sobre una línea sin caer: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda caminar sobre una línea sin caer con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de caminar sobre una línea sin caer.</div>
+      </article>
+      <article class="plan" id="plan-45">
+        <div class="eyebrow">MÓDULO 03 · PLAN 45</div>
+        <h2>Descubrimos gateo con una cuerda larga</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover fortalecer la coordinación al gatear en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre gateo.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a gatear bajo un obstáculo usando una cuerda larga.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega una cuerda larga a cada pareja y plantea el reto: juntos van a gatear bajo un obstáculo sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr gatear bajo un obstáculo en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en gatear bajo un obstáculo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al gatear bajo un obstáculo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-46">
+        <div class="eyebrow">MÓDULO 03 · PLAN 46</div>
+        <h2>Cuento en acción: lanzar y atrapar con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre coordinar ojo y mano al lanzar a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lanzar y atrapar una pelota usando colchonetas.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita lanzar y atrapar una pelota.</li><li>En los momentos clave del relato, entrega colchonetas y pide a los niños ayudar al personaje a lanzar y atrapar una pelota.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr lanzar y atrapar.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lanzar y atrapar una pelota: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando colchonetas por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-47">
+        <div class="eyebrow">MÓDULO 03 · PLAN 47</div>
+        <h2>Correr y frenar usando ula-ulas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de controlar el cuerpo en movimiento.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>ula-ulas, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a correr y detenerse a la señal usando ula-ulas.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta ula-ulas como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a correr y detenerse a la señal.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden ula-ulas entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en correr y detenerse a la señal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que correr y detenerse a la señal se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-48">
+        <div class="eyebrow">MÓDULO 03 · PLAN 48</div>
+        <h2>Jugamos a rodar con sacos de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan controlar el giro del cuerpo con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sacos de tela, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a rodar sobre una colchoneta usando sacos de tela.</li><li>Prepara sacos de tela en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón rodar sobre una colchoneta prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al rodar sobre una colchoneta.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sacos de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en rodar sobre una colchoneta: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para rodar sobre una colchoneta en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-49">
+        <div class="eyebrow">MÓDULO 03 · PLAN 49</div>
+        <h2>Estaciones de juego para esquivar</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular orientarse en el espacio respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de esquivar obstáculos al avanzar.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una cuerda larga, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esquivar obstáculos al avanzar usando una cuerda larga.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a esquivar obstáculos al avanzar.</li><li>Coloca una cuerda larga en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de esquivar.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con una cuerda larga.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esquivar obstáculos al avanzar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren una cuerda larga libremente antes de pedir esquivar obstáculos al avanzar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-50">
+        <div class="eyebrow">MÓDULO 03 · PLAN 50</div>
+        <h2>Descubrimos trepar con colchonetas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Motricidad gruesa y movimiento</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover ganar fuerza y seguridad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de trepar y bajar con cuidado.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>colchonetas, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trepar y bajar con cuidado usando colchonetas.</li><li>Arma un recorrido en el piso con colchonetas y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo trepar y bajar con cuidado en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a trepar y bajar con cuidado».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trepar y bajar con cuidado: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren trepar y bajar con cuidado más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article></main>
+  </div>
+</body></html>

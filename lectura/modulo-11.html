@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 11 — Lectoescritura Inicial · Aula Creativa</title>
+<style>
+  :root{--ac:#E58B6B;--ink:#2D2A45;--soft:#5B5773;--line:#E9E4EF;--bg:#F7F9FC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+  .top{background:var(--ac);color:#fff;padding:26px 22px;position:sticky;top:0;z-index:5}
+  .top .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .top a.back{color:#fff;font-weight:700;opacity:.9;text-decoration:none}
+  .top h1{font-size:1.3rem;flex:1;min-width:200px}
+  .top .dl{background:#fff;color:var(--ac);font-weight:800;padding:10px 18px;border-radius:40px;text-decoration:none}
+  .layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:240px 1fr;gap:30px;padding:26px 22px}
+  nav{position:sticky;top:110px;align-self:start;max-height:80vh;overflow:auto;border-right:1px solid var(--line);padding-right:14px}
+  nav a{display:block;font-size:.82rem;color:var(--soft);text-decoration:none;padding:6px 8px;border-radius:8px}
+  nav a:hover{background:var(--bg);color:var(--ink)}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:26px;box-shadow:0 6px 20px rgba(45,42,69,.05)}
+  .eyebrow{color:var(--ac);font-weight:800;font-size:.75rem;letter-spacing:1px;margin-bottom:6px}
+  .plan h2{font-size:1.5rem;margin-bottom:14px}
+  .ficha{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .ficha div{padding:12px 16px;border-right:1px solid var(--line)}
+  .ficha div:last-child{border-right:none}
+  .ficha span{display:block;font-size:.65rem;color:var(--soft);font-weight:700;letter-spacing:.5px}
+  .ficha b{font-size:1rem}
+  .lbl{color:var(--ac);font-weight:800;font-size:.8rem;letter-spacing:.5px;margin:16px 0 6px}
+  .box{background:color-mix(in srgb,var(--ac) 9%,#fff);border-left:3px solid var(--ac);
+        border-radius:10px;padding:12px 16px;margin:14px 0}
+  .box.soft{margin:10px 0}
+  .box .bl{color:var(--ac);font-weight:800;font-size:.72rem;letter-spacing:.6px;margin-bottom:3px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0}
+  ul.dot{list-style:none} ul.dot li{padding-left:16px;position:relative;margin-bottom:3px}
+  ul.dot li:before{content:'•';color:var(--ac);position:absolute;left:0;font-weight:900}
+  ol.steps{padding-left:4px;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;position:relative;margin-bottom:9px}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;background:var(--ac);color:#fff;
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:800}
+  @media(max-width:820px){.layout{grid-template-columns:1fr}nav{display:none}.two{grid-template-columns:1fr}}
+</style></head><body>
+  <div class="top"><div class="wrap">
+    <a class="back" href="../index.html">← Volver</a>
+    <h1>Módulo 11 · Lectoescritura Inicial</h1>
+    <a class="dl" href="../pdf/11-lectoescritura.pdf" download>⬇ Descargar PDF</a>
+  </div></div>
+  <div class="layout">
+    <nav><a href="#plan-1">01. Estaciones de juego: trazos previos con letras de lija</a><a href="#plan-2">02. Su nombre usando tarjetas de vocales</a><a href="#plan-3">03. Jugamos a sonido inicial con letras móviles</a><a href="#plan-4">04. Exploración libre acompañada para vocales</a><a href="#plan-5">05. Descubrimos rimas con letras de lija</a><a href="#plan-6">06. Cuento en acción: dirección de lectura con tarjetas de vocales</a><a href="#plan-7">07. Contar sílabas usando letras móviles</a><a href="#plan-8">08. Jugamos a letras en el entorno con sellos de letras</a><a href="#plan-9">09. Estaciones de juego para asociar letra e imagen</a><a href="#plan-10">10. Descubrimos escribir como pueden con tarjetas de vocales</a><a href="#plan-11">11. Juego en ronda: secuencia de un cuento con letras móviles</a><a href="#plan-12">12. Palabras largas y cortas usando sellos de letras</a><a href="#plan-13">13. Jugamos a la primera letra con letras de lija</a><a href="#plan-14">14. Cuento en acción para trazar vocales</a><a href="#plan-15">15. Descubrimos trazos previos con letras móviles</a><a href="#plan-16">16. Reto sensorial dirigido: su nombre con sellos de letras</a><a href="#plan-17">17. Sonido inicial usando letras de lija</a><a href="#plan-18">18. Jugamos a vocales con tarjetas de vocales</a><a href="#plan-19">19. Juego en ronda para rimas</a><a href="#plan-20">20. Descubrimos dirección de lectura con sellos de letras</a><a href="#plan-21">21. Desafío por parejas: contar sílabas con letras de lija</a><a href="#plan-22">22. Letras en el entorno usando tarjetas de vocales</a><a href="#plan-23">23. Jugamos a asociar letra e imagen con letras móviles</a><a href="#plan-24">24. Reto sensorial dirigido para escribir como pueden</a><a href="#plan-25">25. Descubrimos secuencia de un cuento con letras de lija</a><a href="#plan-26">26. Circuito guiado: palabras largas y cortas con tarjetas de vocales</a><a href="#plan-27">27. La primera letra usando letras móviles</a><a href="#plan-28">28. Jugamos a trazar vocales con sellos de letras</a><a href="#plan-29">29. Desafío por parejas para trazos previos</a><a href="#plan-30">30. Descubrimos su nombre con tarjetas de vocales</a><a href="#plan-31">31. Juego de mesa colectivo: sonido inicial con letras móviles</a><a href="#plan-32">32. Vocales usando sellos de letras</a><a href="#plan-33">33. Jugamos a rimas con letras de lija</a><a href="#plan-34">34. Circuito guiado para dirección de lectura</a><a href="#plan-35">35. Descubrimos contar sílabas con letras móviles</a><a href="#plan-36">36. Exploración libre acompañada: letras en el entorno con sellos de letras</a><a href="#plan-37">37. Asociar letra e imagen usando letras de lija</a><a href="#plan-38">38. Jugamos a escribir como pueden con tarjetas de vocales</a><a href="#plan-39">39. Juego de mesa colectivo para secuencia de un cuento</a><a href="#plan-40">40. Descubrimos palabras largas y cortas con sellos de letras</a><a href="#plan-41">41. Estaciones de juego: la primera letra con letras de lija</a><a href="#plan-42">42. Trazar vocales usando tarjetas de vocales</a><a href="#plan-43">43. Jugamos a trazos previos con letras móviles</a><a href="#plan-44">44. Exploración libre acompañada para su nombre</a><a href="#plan-45">45. Descubrimos sonido inicial con letras de lija</a><a href="#plan-46">46. Cuento en acción: vocales con tarjetas de vocales</a><a href="#plan-47">47. Rimas usando letras móviles</a><a href="#plan-48">48. Jugamos a dirección de lectura con sellos de letras</a><a href="#plan-49">49. Estaciones de juego para contar sílabas</a><a href="#plan-50">50. Descubrimos letras en el entorno con tarjetas de vocales</a></nav>
+    <main>
+      <article class="plan" id="plan-1">
+        <div class="eyebrow">MÓDULO 11 · PLAN 01</div>
+        <h2>Estaciones de juego: trazos previos con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre preparar la mano para escribir a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de hacer trazos rectos y curvos.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer trazos rectos y curvos usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a hacer trazos rectos y curvos.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de trazos previos.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer trazos rectos y curvos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir hacer trazos rectos y curvos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-2">
+        <div class="eyebrow">MÓDULO 11 · PLAN 02</div>
+        <h2>Su nombre usando tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de identificar su nombre escrito.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las letras de su nombre usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo reconocer las letras de su nombre en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a reconocer las letras de su nombre».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las letras de su nombre: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren reconocer las letras de su nombre más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-3">
+        <div class="eyebrow">MÓDULO 11 · PLAN 03</div>
+        <h2>Jugamos a sonido inicial con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan desarrollar la conciencia fonológica con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre sonido inicial.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer el sonido inicial de una palabra usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para reconocer el sonido inicial de una palabra cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer el sonido inicial de una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de reconocer el sonido inicial de una palabra.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-4">
+        <div class="eyebrow">MÓDULO 11 · PLAN 04</div>
+        <h2>Exploración libre acompañada para vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular relacionar grafía y sonido de las vocales respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre vocales.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las vocales usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede reconocer las vocales?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró reconocer las vocales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las vocales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda reconocer las vocales con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sellos de letras preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-5">
+        <div class="eyebrow">MÓDULO 11 · PLAN 05</div>
+        <h2>Descubrimos rimas con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover percibir sonidos semejantes en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre rimas.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a encontrar palabras que riman usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a encontrar palabras que riman sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr encontrar palabras que riman en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en encontrar palabras que riman: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al encontrar palabras que riman.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a encontrar palabras que riman.</div>
+      </article>
+      <article class="plan" id="plan-6">
+        <div class="eyebrow">MÓDULO 11 · PLAN 06</div>
+        <h2>Cuento en acción: dirección de lectura con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre incorporar la direccionalidad a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir el texto de izquierda a derecha usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita seguir el texto de izquierda a derecha.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a seguir el texto de izquierda a derecha.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr dirección de lectura.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir el texto de izquierda a derecha: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de vocales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-7">
+        <div class="eyebrow">MÓDULO 11 · PLAN 07</div>
+        <h2>Contar sílabas usando letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de segmentar palabras en sílabas.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar palmas por cada sílaba usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a dar palmas por cada sílaba.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar palmas por cada sílaba: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que dar palmas por cada sílaba se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-8">
+        <div class="eyebrow">MÓDULO 11 · PLAN 08</div>
+        <h2>Jugamos a letras en el entorno con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan reconocer letras conocidas con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a buscar letras a su alrededor usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón buscar letras a su alrededor prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al buscar letras a su alrededor.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en buscar letras a su alrededor: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para buscar letras a su alrededor en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de buscar letras a su alrededor.</div>
+      </article>
+      <article class="plan" id="plan-9">
+        <div class="eyebrow">MÓDULO 11 · PLAN 09</div>
+        <h2>Estaciones de juego para asociar letra e imagen</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular relacionar letra y palabra respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de unir una letra con un dibujo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a unir una letra con un dibujo usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a unir una letra con un dibujo.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de asociar letra e imagen.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en unir una letra con un dibujo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir unir una letra con un dibujo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-10">
+        <div class="eyebrow">MÓDULO 11 · PLAN 10</div>
+        <h2>Descubrimos escribir como pueden con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover animarse a escribir a su manera en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de hacer su escritura espontánea.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer su escritura espontánea usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo hacer su escritura espontánea en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a hacer su escritura espontánea».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer su escritura espontánea: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren hacer su escritura espontánea más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-11">
+        <div class="eyebrow">MÓDULO 11 · PLAN 11</div>
+        <h2>Juego en ronda: secuencia de un cuento con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre comprender la estructura de un relato a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de ordenar tres escenas.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar tres escenas usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para ordenar tres escenas cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar tres escenas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de ordenar tres escenas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-12">
+        <div class="eyebrow">MÓDULO 11 · PLAN 12</div>
+        <h2>Palabras largas y cortas usando sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de percibir la extensión de las palabras.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a comparar palabras por su largo usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede comparar palabras por su largo?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró comparar palabras por su largo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en comparar palabras por su largo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda comparar palabras por su largo con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-13">
+        <div class="eyebrow">MÓDULO 11 · PLAN 13</div>
+        <h2>Jugamos a la primera letra con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan reconocer la letra inicial con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la primera letra.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a clasificar por la letra inicial usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a clasificar por la letra inicial sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr clasificar por la letra inicial en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en clasificar por la letra inicial: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al clasificar por la letra inicial.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-14">
+        <div class="eyebrow">MÓDULO 11 · PLAN 14</div>
+        <h2>Cuento en acción para trazar vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular coordinar el trazo de las vocales respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre trazar vocales.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trazar una vocal usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita trazar una vocal.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a trazar una vocal.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr trazar vocales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trazar una vocal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-15">
+        <div class="eyebrow">MÓDULO 11 · PLAN 15</div>
+        <h2>Descubrimos trazos previos con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover preparar la mano para escribir en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre trazos previos.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer trazos rectos y curvos usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a hacer trazos rectos y curvos.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer trazos rectos y curvos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que hacer trazos rectos y curvos se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-16">
+        <div class="eyebrow">MÓDULO 11 · PLAN 16</div>
+        <h2>Reto sensorial dirigido: su nombre con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre identificar su nombre escrito a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las letras de su nombre usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón reconocer las letras de su nombre prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al reconocer las letras de su nombre.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las letras de su nombre: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para reconocer las letras de su nombre en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sellos de letras preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-17">
+        <div class="eyebrow">MÓDULO 11 · PLAN 17</div>
+        <h2>Sonido inicial usando letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de desarrollar la conciencia fonológica.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer el sonido inicial de una palabra usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a reconocer el sonido inicial de una palabra.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de sonido inicial.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer el sonido inicial de una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir reconocer el sonido inicial de una palabra.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a reconocer el sonido inicial de una palabra.</div>
+      </article>
+      <article class="plan" id="plan-18">
+        <div class="eyebrow">MÓDULO 11 · PLAN 18</div>
+        <h2>Jugamos a vocales con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan relacionar grafía y sonido de las vocales con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las vocales usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo reconocer las vocales en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a reconocer las vocales».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las vocales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren reconocer las vocales más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de vocales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-19">
+        <div class="eyebrow">MÓDULO 11 · PLAN 19</div>
+        <h2>Juego en ronda para rimas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular percibir sonidos semejantes respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de encontrar palabras que riman.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a encontrar palabras que riman usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para encontrar palabras que riman cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en encontrar palabras que riman: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de encontrar palabras que riman.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-20">
+        <div class="eyebrow">MÓDULO 11 · PLAN 20</div>
+        <h2>Descubrimos dirección de lectura con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover incorporar la direccionalidad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de seguir el texto de izquierda a derecha.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir el texto de izquierda a derecha usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede seguir el texto de izquierda a derecha?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró seguir el texto de izquierda a derecha.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir el texto de izquierda a derecha: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda seguir el texto de izquierda a derecha con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de seguir el texto de izquierda a derecha.</div>
+      </article>
+      <article class="plan" id="plan-21">
+        <div class="eyebrow">MÓDULO 11 · PLAN 21</div>
+        <h2>Desafío por parejas: contar sílabas con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre segmentar palabras en sílabas a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de dar palmas por cada sílaba.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar palmas por cada sílaba usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a dar palmas por cada sílaba sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr dar palmas por cada sílaba en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar palmas por cada sílaba: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al dar palmas por cada sílaba.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-22">
+        <div class="eyebrow">MÓDULO 11 · PLAN 22</div>
+        <h2>Letras en el entorno usando tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de reconocer letras conocidas.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a buscar letras a su alrededor usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita buscar letras a su alrededor.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a buscar letras a su alrededor.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr letras en el entorno.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en buscar letras a su alrededor: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-23">
+        <div class="eyebrow">MÓDULO 11 · PLAN 23</div>
+        <h2>Jugamos a asociar letra e imagen con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan relacionar letra y palabra con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre asociar letra e imagen.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a unir una letra con un dibujo usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a unir una letra con un dibujo.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en unir una letra con un dibujo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que unir una letra con un dibujo se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-24">
+        <div class="eyebrow">MÓDULO 11 · PLAN 24</div>
+        <h2>Reto sensorial dirigido para escribir como pueden</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular animarse a escribir a su manera respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre escribir como pueden.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer su escritura espontánea usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón hacer su escritura espontánea prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al hacer su escritura espontánea.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer su escritura espontánea: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para hacer su escritura espontánea en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-25">
+        <div class="eyebrow">MÓDULO 11 · PLAN 25</div>
+        <h2>Descubrimos secuencia de un cuento con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover comprender la estructura de un relato en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre secuencia de un cuento.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar tres escenas usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a ordenar tres escenas.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de secuencia de un cuento.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar tres escenas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir ordenar tres escenas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-26">
+        <div class="eyebrow">MÓDULO 11 · PLAN 26</div>
+        <h2>Circuito guiado: palabras largas y cortas con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre percibir la extensión de las palabras a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a comparar palabras por su largo usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo comparar palabras por su largo en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a comparar palabras por su largo».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en comparar palabras por su largo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren comparar palabras por su largo más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-27">
+        <div class="eyebrow">MÓDULO 11 · PLAN 27</div>
+        <h2>La primera letra usando letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de reconocer la letra inicial.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a clasificar por la letra inicial usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para clasificar por la letra inicial cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en clasificar por la letra inicial: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de clasificar por la letra inicial.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-28">
+        <div class="eyebrow">MÓDULO 11 · PLAN 28</div>
+        <h2>Jugamos a trazar vocales con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan coordinar el trazo de las vocales con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trazar una vocal usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede trazar una vocal?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró trazar una vocal.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trazar una vocal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda trazar una vocal con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sellos de letras preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-29">
+        <div class="eyebrow">MÓDULO 11 · PLAN 29</div>
+        <h2>Desafío por parejas para trazos previos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular preparar la mano para escribir respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de hacer trazos rectos y curvos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer trazos rectos y curvos usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a hacer trazos rectos y curvos sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr hacer trazos rectos y curvos en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer trazos rectos y curvos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al hacer trazos rectos y curvos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a hacer trazos rectos y curvos.</div>
+      </article>
+      <article class="plan" id="plan-30">
+        <div class="eyebrow">MÓDULO 11 · PLAN 30</div>
+        <h2>Descubrimos su nombre con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover identificar su nombre escrito en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de reconocer las letras de su nombre.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las letras de su nombre usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita reconocer las letras de su nombre.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a reconocer las letras de su nombre.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr su nombre.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las letras de su nombre: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de vocales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-31">
+        <div class="eyebrow">MÓDULO 11 · PLAN 31</div>
+        <h2>Juego de mesa colectivo: sonido inicial con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre desarrollar la conciencia fonológica a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de reconocer el sonido inicial de una palabra.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer el sonido inicial de una palabra usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a reconocer el sonido inicial de una palabra.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer el sonido inicial de una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que reconocer el sonido inicial de una palabra se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-32">
+        <div class="eyebrow">MÓDULO 11 · PLAN 32</div>
+        <h2>Vocales usando sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de relacionar grafía y sonido de las vocales.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las vocales usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón reconocer las vocales prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al reconocer las vocales.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las vocales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para reconocer las vocales en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de reconocer las vocales.</div>
+      </article>
+      <article class="plan" id="plan-33">
+        <div class="eyebrow">MÓDULO 11 · PLAN 33</div>
+        <h2>Jugamos a rimas con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan percibir sonidos semejantes con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre rimas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a encontrar palabras que riman usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a encontrar palabras que riman.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de rimas.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en encontrar palabras que riman: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir encontrar palabras que riman.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-34">
+        <div class="eyebrow">MÓDULO 11 · PLAN 34</div>
+        <h2>Circuito guiado para dirección de lectura</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular incorporar la direccionalidad respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre dirección de lectura.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir el texto de izquierda a derecha usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo seguir el texto de izquierda a derecha en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a seguir el texto de izquierda a derecha».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir el texto de izquierda a derecha: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren seguir el texto de izquierda a derecha más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-35">
+        <div class="eyebrow">MÓDULO 11 · PLAN 35</div>
+        <h2>Descubrimos contar sílabas con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover segmentar palabras en sílabas en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre contar sílabas.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar palmas por cada sílaba usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para dar palmas por cada sílaba cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar palmas por cada sílaba: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de dar palmas por cada sílaba.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-36">
+        <div class="eyebrow">MÓDULO 11 · PLAN 36</div>
+        <h2>Exploración libre acompañada: letras en el entorno con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre reconocer letras conocidas a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a buscar letras a su alrededor usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede buscar letras a su alrededor?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró buscar letras a su alrededor.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en buscar letras a su alrededor: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda buscar letras a su alrededor con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-37">
+        <div class="eyebrow">MÓDULO 11 · PLAN 37</div>
+        <h2>Asociar letra e imagen usando letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de relacionar letra y palabra.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a unir una letra con un dibujo usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a unir una letra con un dibujo sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr unir una letra con un dibujo en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en unir una letra con un dibujo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al unir una letra con un dibujo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-38">
+        <div class="eyebrow">MÓDULO 11 · PLAN 38</div>
+        <h2>Jugamos a escribir como pueden con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan animarse a escribir a su manera con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer su escritura espontánea usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita hacer su escritura espontánea.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a hacer su escritura espontánea.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr escribir como pueden.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer su escritura espontánea: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-39">
+        <div class="eyebrow">MÓDULO 11 · PLAN 39</div>
+        <h2>Juego de mesa colectivo para secuencia de un cuento</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular comprender la estructura de un relato respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de ordenar tres escenas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar tres escenas usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a ordenar tres escenas.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar tres escenas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que ordenar tres escenas se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-40">
+        <div class="eyebrow">MÓDULO 11 · PLAN 40</div>
+        <h2>Descubrimos palabras largas y cortas con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover percibir la extensión de las palabras en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de comparar palabras por su largo.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a comparar palabras por su largo usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón comparar palabras por su largo prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al comparar palabras por su largo.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en comparar palabras por su largo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para comparar palabras por su largo en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten sellos de letras preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-41">
+        <div class="eyebrow">MÓDULO 11 · PLAN 41</div>
+        <h2>Estaciones de juego: la primera letra con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre reconocer la letra inicial a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de clasificar por la letra inicial.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a clasificar por la letra inicial usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a clasificar por la letra inicial.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de la primera letra.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en clasificar por la letra inicial: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir clasificar por la letra inicial.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a clasificar por la letra inicial.</div>
+      </article>
+      <article class="plan" id="plan-42">
+        <div class="eyebrow">MÓDULO 11 · PLAN 42</div>
+        <h2>Trazar vocales usando tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de coordinar el trazo de las vocales.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a trazar una vocal usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo trazar una vocal en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a trazar una vocal».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en trazar una vocal: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren trazar una vocal más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de vocales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-43">
+        <div class="eyebrow">MÓDULO 11 · PLAN 43</div>
+        <h2>Jugamos a trazos previos con letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan preparar la mano para escribir con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre trazos previos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a hacer trazos rectos y curvos usando letras móviles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta letras móviles en el centro y explica que lo usaremos para hacer trazos rectos y curvos cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con letras móviles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en hacer trazos rectos y curvos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de letras móviles, manteniendo la consigna de hacer trazos rectos y curvos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-44">
+        <div class="eyebrow">MÓDULO 11 · PLAN 44</div>
+        <h2>Exploración libre acompañada para su nombre</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular identificar su nombre escrito respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre su nombre.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las letras de su nombre usando sellos de letras.</li><li>Dispón sellos de letras sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede reconocer las letras de su nombre?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró reconocer las letras de su nombre.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las letras de su nombre: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda reconocer las letras de su nombre con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de reconocer las letras de su nombre.</div>
+      </article>
+      <article class="plan" id="plan-45">
+        <div class="eyebrow">MÓDULO 11 · PLAN 45</div>
+        <h2>Descubrimos sonido inicial con letras de lija</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover desarrollar la conciencia fonológica en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre sonido inicial.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer el sonido inicial de una palabra usando letras de lija.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega letras de lija a cada pareja y plantea el reto: juntos van a reconocer el sonido inicial de una palabra sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr reconocer el sonido inicial de una palabra en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer el sonido inicial de una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al reconocer el sonido inicial de una palabra.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-46">
+        <div class="eyebrow">MÓDULO 11 · PLAN 46</div>
+        <h2>Cuento en acción: vocales con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre relacionar grafía y sonido de las vocales a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer las vocales usando tarjetas de vocales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita reconocer las vocales.</li><li>En los momentos clave del relato, entrega tarjetas de vocales y pide a los niños ayudar al personaje a reconocer las vocales.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr vocales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer las vocales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de vocales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-47">
+        <div class="eyebrow">MÓDULO 11 · PLAN 47</div>
+        <h2>Rimas usando letras móviles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de percibir sonidos semejantes.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras móviles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a encontrar palabras que riman usando letras móviles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta letras móviles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a encontrar palabras que riman.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden letras móviles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en encontrar palabras que riman: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que encontrar palabras que riman se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-48">
+        <div class="eyebrow">MÓDULO 11 · PLAN 48</div>
+        <h2>Jugamos a dirección de lectura con sellos de letras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan incorporar la direccionalidad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>sellos de letras, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir el texto de izquierda a derecha usando sellos de letras.</li><li>Prepara sellos de letras en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón seguir el texto de izquierda a derecha prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al seguir el texto de izquierda a derecha.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de sellos de letras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir el texto de izquierda a derecha: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para seguir el texto de izquierda a derecha en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-49">
+        <div class="eyebrow">MÓDULO 11 · PLAN 49</div>
+        <h2>Estaciones de juego para contar sílabas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular segmentar palabras en sílabas respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de dar palmas por cada sílaba.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>letras de lija, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar palmas por cada sílaba usando letras de lija.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a dar palmas por cada sílaba.</li><li>Coloca letras de lija en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de contar sílabas.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con letras de lija.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar palmas por cada sílaba: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren letras de lija libremente antes de pedir dar palmas por cada sílaba.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-50">
+        <div class="eyebrow">MÓDULO 11 · PLAN 50</div>
+        <h2>Descubrimos letras en el entorno con tarjetas de vocales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lectoescritura inicial</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover reconocer letras conocidas en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de buscar letras a su alrededor.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a buscar letras a su alrededor usando tarjetas de vocales.</li><li>Arma un recorrido en el piso con tarjetas de vocales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo buscar letras a su alrededor en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a buscar letras a su alrededor».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en buscar letras a su alrededor: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren buscar letras a su alrededor más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article></main>
+  </div>
+</body></html>

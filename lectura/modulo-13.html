@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 13 — Valores y Convivencia · Aula Creativa</title>
+<style>
+  :root{--ac:#E089A0;--ink:#2D2A45;--soft:#5B5773;--line:#E9E4EF;--bg:#F7F9FC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+  .top{background:var(--ac);color:#fff;padding:26px 22px;position:sticky;top:0;z-index:5}
+  .top .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .top a.back{color:#fff;font-weight:700;opacity:.9;text-decoration:none}
+  .top h1{font-size:1.3rem;flex:1;min-width:200px}
+  .top .dl{background:#fff;color:var(--ac);font-weight:800;padding:10px 18px;border-radius:40px;text-decoration:none}
+  .layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:240px 1fr;gap:30px;padding:26px 22px}
+  nav{position:sticky;top:110px;align-self:start;max-height:80vh;overflow:auto;border-right:1px solid var(--line);padding-right:14px}
+  nav a{display:block;font-size:.82rem;color:var(--soft);text-decoration:none;padding:6px 8px;border-radius:8px}
+  nav a:hover{background:var(--bg);color:var(--ink)}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:26px;box-shadow:0 6px 20px rgba(45,42,69,.05)}
+  .eyebrow{color:var(--ac);font-weight:800;font-size:.75rem;letter-spacing:1px;margin-bottom:6px}
+  .plan h2{font-size:1.5rem;margin-bottom:14px}
+  .ficha{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .ficha div{padding:12px 16px;border-right:1px solid var(--line)}
+  .ficha div:last-child{border-right:none}
+  .ficha span{display:block;font-size:.65rem;color:var(--soft);font-weight:700;letter-spacing:.5px}
+  .ficha b{font-size:1rem}
+  .lbl{color:var(--ac);font-weight:800;font-size:.8rem;letter-spacing:.5px;margin:16px 0 6px}
+  .box{background:color-mix(in srgb,var(--ac) 9%,#fff);border-left:3px solid var(--ac);
+        border-radius:10px;padding:12px 16px;margin:14px 0}
+  .box.soft{margin:10px 0}
+  .box .bl{color:var(--ac);font-weight:800;font-size:.72rem;letter-spacing:.6px;margin-bottom:3px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0}
+  ul.dot{list-style:none} ul.dot li{padding-left:16px;position:relative;margin-bottom:3px}
+  ul.dot li:before{content:'•';color:var(--ac);position:absolute;left:0;font-weight:900}
+  ol.steps{padding-left:4px;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;position:relative;margin-bottom:9px}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;background:var(--ac);color:#fff;
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:800}
+  @media(max-width:820px){.layout{grid-template-columns:1fr}nav{display:none}.two{grid-template-columns:1fr}}
+</style></head><body>
+  <div class="top"><div class="wrap">
+    <a class="back" href="../index.html">← Volver</a>
+    <h1>Módulo 13 · Valores y Convivencia</h1>
+    <a class="dl" href="../pdf/13-valores.pdf" download>⬇ Descargar PDF</a>
+  </div></div>
+  <div class="layout">
+    <nav><a href="#plan-1">01. Estaciones de juego: compartir con tarjetas de situaciones</a><a href="#plan-2">02. El respeto usando una caja para compartir</a><a href="#plan-3">03. Jugamos a la amistad con fichas de roles</a><a href="#plan-4">04. Exploración libre acompañada para la cooperación</a><a href="#plan-5">05. Descubrimos decir la verdad con tarjetas de situaciones</a><a href="#plan-6">06. Cuento en acción: cuidar las cosas con una caja para compartir</a><a href="#plan-7">07. Pedir por favor usando fichas de roles</a><a href="#plan-8">08. Jugamos a incluir a todos con un libro de cuentos</a><a href="#plan-9">09. Estaciones de juego para resolver sin pelear</a><a href="#plan-10">10. Descubrimos la paciencia con una caja para compartir</a><a href="#plan-11">11. Juego en ronda: ayudar al que lo necesita con fichas de roles</a><a href="#plan-12">12. La responsabilidad usando un libro de cuentos</a><a href="#plan-13">13. Jugamos a agradecer con tarjetas de situaciones</a><a href="#plan-14">14. Cuento en acción para respetar las diferencias</a><a href="#plan-15">15. Descubrimos compartir con fichas de roles</a><a href="#plan-16">16. Reto sensorial dirigido: el respeto con un libro de cuentos</a><a href="#plan-17">17. La amistad usando tarjetas de situaciones</a><a href="#plan-18">18. Jugamos a la cooperación con una caja para compartir</a><a href="#plan-19">19. Juego en ronda para decir la verdad</a><a href="#plan-20">20. Descubrimos cuidar las cosas con un libro de cuentos</a><a href="#plan-21">21. Desafío por parejas: pedir por favor con tarjetas de situaciones</a><a href="#plan-22">22. Incluir a todos usando una caja para compartir</a><a href="#plan-23">23. Jugamos a resolver sin pelear con fichas de roles</a><a href="#plan-24">24. Reto sensorial dirigido para la paciencia</a><a href="#plan-25">25. Descubrimos ayudar al que lo necesita con tarjetas de situaciones</a><a href="#plan-26">26. Circuito guiado: la responsabilidad con una caja para compartir</a><a href="#plan-27">27. Agradecer usando fichas de roles</a><a href="#plan-28">28. Jugamos a respetar las diferencias con un libro de cuentos</a><a href="#plan-29">29. Desafío por parejas para compartir</a><a href="#plan-30">30. Descubrimos el respeto con una caja para compartir</a><a href="#plan-31">31. Juego de mesa colectivo: la amistad con fichas de roles</a><a href="#plan-32">32. La cooperación usando un libro de cuentos</a><a href="#plan-33">33. Jugamos a decir la verdad con tarjetas de situaciones</a><a href="#plan-34">34. Circuito guiado para cuidar las cosas</a><a href="#plan-35">35. Descubrimos pedir por favor con fichas de roles</a><a href="#plan-36">36. Exploración libre acompañada: incluir a todos con un libro de cuentos</a><a href="#plan-37">37. Resolver sin pelear usando tarjetas de situaciones</a><a href="#plan-38">38. Jugamos a la paciencia con una caja para compartir</a><a href="#plan-39">39. Juego de mesa colectivo para ayudar al que lo necesita</a><a href="#plan-40">40. Descubrimos la responsabilidad con un libro de cuentos</a><a href="#plan-41">41. Estaciones de juego: agradecer con tarjetas de situaciones</a><a href="#plan-42">42. Respetar las diferencias usando una caja para compartir</a><a href="#plan-43">43. Jugamos a compartir con fichas de roles</a><a href="#plan-44">44. Exploración libre acompañada para el respeto</a><a href="#plan-45">45. Descubrimos la amistad con tarjetas de situaciones</a><a href="#plan-46">46. Cuento en acción: la cooperación con una caja para compartir</a><a href="#plan-47">47. Decir la verdad usando fichas de roles</a><a href="#plan-48">48. Jugamos a cuidar las cosas con un libro de cuentos</a><a href="#plan-49">49. Estaciones de juego para pedir por favor</a><a href="#plan-50">50. Descubrimos incluir a todos con una caja para compartir</a></nav>
+    <main>
+      <article class="plan" id="plan-1">
+        <div class="eyebrow">MÓDULO 13 · PLAN 01</div>
+        <h2>Estaciones de juego: compartir con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre practicar la generosidad a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de compartir un material con otro.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir un material con otro usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a compartir un material con otro.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de compartir.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir un material con otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir compartir un material con otro.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-2">
+        <div class="eyebrow">MÓDULO 13 · PLAN 02</div>
+        <h2>El respeto usando una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de respetar la palabra del otro.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a escuchar sin interrumpir usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo escuchar sin interrumpir en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a escuchar sin interrumpir».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en escuchar sin interrumpir: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren escuchar sin interrumpir más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-3">
+        <div class="eyebrow">MÓDULO 13 · PLAN 03</div>
+        <h2>Jugamos a la amistad con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan construir vínculos de amistad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la amistad.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar a un amigo usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para cuidar a un amigo cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar a un amigo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de cuidar a un amigo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-4">
+        <div class="eyebrow">MÓDULO 13 · PLAN 04</div>
+        <h2>Exploración libre acompañada para la cooperación</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular cooperar por un objetivo común respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la cooperación.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lograr algo entre todos usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede lograr algo entre todos?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró lograr algo entre todos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lograr algo entre todos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda lograr algo entre todos con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un libro de cuentos preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-5">
+        <div class="eyebrow">MÓDULO 13 · PLAN 05</div>
+        <h2>Descubrimos decir la verdad con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover valorar la honestidad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre decir la verdad.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer lo que pasó usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a reconocer lo que pasó sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr reconocer lo que pasó en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer lo que pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al reconocer lo que pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a reconocer lo que pasó.</div>
+      </article>
+      <article class="plan" id="plan-6">
+        <div class="eyebrow">MÓDULO 13 · PLAN 06</div>
+        <h2>Cuento en acción: cuidar las cosas con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre desarrollar el cuidado de lo común a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar los materiales comunes usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita cuidar los materiales comunes.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a cuidar los materiales comunes.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr cuidar las cosas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar los materiales comunes: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar una caja para compartir no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-7">
+        <div class="eyebrow">MÓDULO 13 · PLAN 07</div>
+        <h2>Pedir por favor usando fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de incorporar fórmulas de cortesía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir con amabilidad usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a pedir con amabilidad.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir con amabilidad: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que pedir con amabilidad se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-8">
+        <div class="eyebrow">MÓDULO 13 · PLAN 08</div>
+        <h2>Jugamos a incluir a todos con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan practicar la inclusión con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a invitar a jugar a quien está solo usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón invitar a jugar a quien está solo prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al invitar a jugar a quien está solo.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en invitar a jugar a quien está solo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para invitar a jugar a quien está solo en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de invitar a jugar a quien está solo.</div>
+      </article>
+      <article class="plan" id="plan-9">
+        <div class="eyebrow">MÓDULO 13 · PLAN 09</div>
+        <h2>Estaciones de juego para resolver sin pelear</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular gestionar conflictos pacíficamente respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de resolver un conflicto con palabras.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a resolver un conflicto con palabras usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a resolver un conflicto con palabras.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de resolver sin pelear.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en resolver un conflicto con palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir resolver un conflicto con palabras.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-10">
+        <div class="eyebrow">MÓDULO 13 · PLAN 10</div>
+        <h2>Descubrimos la paciencia con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover desarrollar la paciencia en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de esperar el turno con calma.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esperar el turno con calma usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo esperar el turno con calma en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a esperar el turno con calma».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esperar el turno con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren esperar el turno con calma más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-11">
+        <div class="eyebrow">MÓDULO 13 · PLAN 11</div>
+        <h2>Juego en ronda: ayudar al que lo necesita con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre practicar la solidaridad a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de ofrecer ayuda.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ofrecer ayuda usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para ofrecer ayuda cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ofrecer ayuda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de ofrecer ayuda.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-12">
+        <div class="eyebrow">MÓDULO 13 · PLAN 12</div>
+        <h2>La responsabilidad usando un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de asumir responsabilidades.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea acordada usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede cumplir una tarea acordada?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró cumplir una tarea acordada.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea acordada: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda cumplir una tarea acordada con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-13">
+        <div class="eyebrow">MÓDULO 13 · PLAN 13</div>
+        <h2>Jugamos a agradecer con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan practicar la gratitud con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre agradecer.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar las gracias de corazón usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a dar las gracias de corazón sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr dar las gracias de corazón en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar las gracias de corazón: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al dar las gracias de corazón.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-14">
+        <div class="eyebrow">MÓDULO 13 · PLAN 14</div>
+        <h2>Cuento en acción para respetar las diferencias</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular aceptar la diversidad respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre respetar las diferencias.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a valorar lo distinto del otro usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita valorar lo distinto del otro.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a valorar lo distinto del otro.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr respetar las diferencias.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en valorar lo distinto del otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-15">
+        <div class="eyebrow">MÓDULO 13 · PLAN 15</div>
+        <h2>Descubrimos compartir con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover practicar la generosidad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre compartir.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir un material con otro usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a compartir un material con otro.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir un material con otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que compartir un material con otro se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-16">
+        <div class="eyebrow">MÓDULO 13 · PLAN 16</div>
+        <h2>Reto sensorial dirigido: el respeto con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre respetar la palabra del otro a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a escuchar sin interrumpir usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón escuchar sin interrumpir prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al escuchar sin interrumpir.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en escuchar sin interrumpir: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para escuchar sin interrumpir en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un libro de cuentos preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-17">
+        <div class="eyebrow">MÓDULO 13 · PLAN 17</div>
+        <h2>La amistad usando tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de construir vínculos de amistad.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar a un amigo usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a cuidar a un amigo.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de la amistad.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar a un amigo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir cuidar a un amigo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a cuidar a un amigo.</div>
+      </article>
+      <article class="plan" id="plan-18">
+        <div class="eyebrow">MÓDULO 13 · PLAN 18</div>
+        <h2>Jugamos a la cooperación con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan cooperar por un objetivo común con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lograr algo entre todos usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo lograr algo entre todos en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a lograr algo entre todos».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lograr algo entre todos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren lograr algo entre todos más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar una caja para compartir no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-19">
+        <div class="eyebrow">MÓDULO 13 · PLAN 19</div>
+        <h2>Juego en ronda para decir la verdad</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular valorar la honestidad respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de reconocer lo que pasó.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer lo que pasó usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para reconocer lo que pasó cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer lo que pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de reconocer lo que pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-20">
+        <div class="eyebrow">MÓDULO 13 · PLAN 20</div>
+        <h2>Descubrimos cuidar las cosas con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover desarrollar el cuidado de lo común en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de cuidar los materiales comunes.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar los materiales comunes usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede cuidar los materiales comunes?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró cuidar los materiales comunes.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar los materiales comunes: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda cuidar los materiales comunes con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de cuidar los materiales comunes.</div>
+      </article>
+      <article class="plan" id="plan-21">
+        <div class="eyebrow">MÓDULO 13 · PLAN 21</div>
+        <h2>Desafío por parejas: pedir por favor con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre incorporar fórmulas de cortesía a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de pedir con amabilidad.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir con amabilidad usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a pedir con amabilidad sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr pedir con amabilidad en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir con amabilidad: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al pedir con amabilidad.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-22">
+        <div class="eyebrow">MÓDULO 13 · PLAN 22</div>
+        <h2>Incluir a todos usando una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de practicar la inclusión.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a invitar a jugar a quien está solo usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita invitar a jugar a quien está solo.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a invitar a jugar a quien está solo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr incluir a todos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en invitar a jugar a quien está solo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-23">
+        <div class="eyebrow">MÓDULO 13 · PLAN 23</div>
+        <h2>Jugamos a resolver sin pelear con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan gestionar conflictos pacíficamente con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre resolver sin pelear.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a resolver un conflicto con palabras usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a resolver un conflicto con palabras.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en resolver un conflicto con palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que resolver un conflicto con palabras se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-24">
+        <div class="eyebrow">MÓDULO 13 · PLAN 24</div>
+        <h2>Reto sensorial dirigido para la paciencia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular desarrollar la paciencia respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la paciencia.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esperar el turno con calma usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón esperar el turno con calma prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al esperar el turno con calma.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esperar el turno con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para esperar el turno con calma en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-25">
+        <div class="eyebrow">MÓDULO 13 · PLAN 25</div>
+        <h2>Descubrimos ayudar al que lo necesita con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover practicar la solidaridad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre ayudar al que lo necesita.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ofrecer ayuda usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a ofrecer ayuda.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de ayudar al que lo necesita.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ofrecer ayuda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir ofrecer ayuda.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-26">
+        <div class="eyebrow">MÓDULO 13 · PLAN 26</div>
+        <h2>Circuito guiado: la responsabilidad con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre asumir responsabilidades a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea acordada usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo cumplir una tarea acordada en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a cumplir una tarea acordada».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea acordada: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren cumplir una tarea acordada más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-27">
+        <div class="eyebrow">MÓDULO 13 · PLAN 27</div>
+        <h2>Agradecer usando fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de practicar la gratitud.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar las gracias de corazón usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para dar las gracias de corazón cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar las gracias de corazón: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de dar las gracias de corazón.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-28">
+        <div class="eyebrow">MÓDULO 13 · PLAN 28</div>
+        <h2>Jugamos a respetar las diferencias con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan aceptar la diversidad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a valorar lo distinto del otro usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede valorar lo distinto del otro?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró valorar lo distinto del otro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en valorar lo distinto del otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda valorar lo distinto del otro con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un libro de cuentos preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-29">
+        <div class="eyebrow">MÓDULO 13 · PLAN 29</div>
+        <h2>Desafío por parejas para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular practicar la generosidad respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de compartir un material con otro.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir un material con otro usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a compartir un material con otro sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr compartir un material con otro en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir un material con otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al compartir un material con otro.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a compartir un material con otro.</div>
+      </article>
+      <article class="plan" id="plan-30">
+        <div class="eyebrow">MÓDULO 13 · PLAN 30</div>
+        <h2>Descubrimos el respeto con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover respetar la palabra del otro en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de escuchar sin interrumpir.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a escuchar sin interrumpir usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita escuchar sin interrumpir.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a escuchar sin interrumpir.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr el respeto.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en escuchar sin interrumpir: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar una caja para compartir no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-31">
+        <div class="eyebrow">MÓDULO 13 · PLAN 31</div>
+        <h2>Juego de mesa colectivo: la amistad con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre construir vínculos de amistad a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de cuidar a un amigo.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar a un amigo usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a cuidar a un amigo.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar a un amigo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que cuidar a un amigo se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-32">
+        <div class="eyebrow">MÓDULO 13 · PLAN 32</div>
+        <h2>La cooperación usando un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de cooperar por un objetivo común.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lograr algo entre todos usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón lograr algo entre todos prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al lograr algo entre todos.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lograr algo entre todos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para lograr algo entre todos en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de lograr algo entre todos.</div>
+      </article>
+      <article class="plan" id="plan-33">
+        <div class="eyebrow">MÓDULO 13 · PLAN 33</div>
+        <h2>Jugamos a decir la verdad con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan valorar la honestidad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre decir la verdad.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer lo que pasó usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a reconocer lo que pasó.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de decir la verdad.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer lo que pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir reconocer lo que pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-34">
+        <div class="eyebrow">MÓDULO 13 · PLAN 34</div>
+        <h2>Circuito guiado para cuidar las cosas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular desarrollar el cuidado de lo común respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre cuidar las cosas.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar los materiales comunes usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo cuidar los materiales comunes en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a cuidar los materiales comunes».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar los materiales comunes: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren cuidar los materiales comunes más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-35">
+        <div class="eyebrow">MÓDULO 13 · PLAN 35</div>
+        <h2>Descubrimos pedir por favor con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover incorporar fórmulas de cortesía en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre pedir por favor.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir con amabilidad usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para pedir con amabilidad cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir con amabilidad: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de pedir con amabilidad.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-36">
+        <div class="eyebrow">MÓDULO 13 · PLAN 36</div>
+        <h2>Exploración libre acompañada: incluir a todos con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre practicar la inclusión a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a invitar a jugar a quien está solo usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede invitar a jugar a quien está solo?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró invitar a jugar a quien está solo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en invitar a jugar a quien está solo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda invitar a jugar a quien está solo con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-37">
+        <div class="eyebrow">MÓDULO 13 · PLAN 37</div>
+        <h2>Resolver sin pelear usando tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de gestionar conflictos pacíficamente.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a resolver un conflicto con palabras usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a resolver un conflicto con palabras sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr resolver un conflicto con palabras en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en resolver un conflicto con palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al resolver un conflicto con palabras.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-38">
+        <div class="eyebrow">MÓDULO 13 · PLAN 38</div>
+        <h2>Jugamos a la paciencia con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan desarrollar la paciencia con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a esperar el turno con calma usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita esperar el turno con calma.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a esperar el turno con calma.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr la paciencia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en esperar el turno con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-39">
+        <div class="eyebrow">MÓDULO 13 · PLAN 39</div>
+        <h2>Juego de mesa colectivo para ayudar al que lo necesita</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular practicar la solidaridad respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de ofrecer ayuda.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ofrecer ayuda usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a ofrecer ayuda.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ofrecer ayuda: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que ofrecer ayuda se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-40">
+        <div class="eyebrow">MÓDULO 13 · PLAN 40</div>
+        <h2>Descubrimos la responsabilidad con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover asumir responsabilidades en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de cumplir una tarea acordada.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea acordada usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón cumplir una tarea acordada prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al cumplir una tarea acordada.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea acordada: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para cumplir una tarea acordada en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un libro de cuentos preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-41">
+        <div class="eyebrow">MÓDULO 13 · PLAN 41</div>
+        <h2>Estaciones de juego: agradecer con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre practicar la gratitud a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de dar las gracias de corazón.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a dar las gracias de corazón usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a dar las gracias de corazón.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de agradecer.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en dar las gracias de corazón: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir dar las gracias de corazón.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a dar las gracias de corazón.</div>
+      </article>
+      <article class="plan" id="plan-42">
+        <div class="eyebrow">MÓDULO 13 · PLAN 42</div>
+        <h2>Respetar las diferencias usando una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de aceptar la diversidad.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a valorar lo distinto del otro usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo valorar lo distinto del otro en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a valorar lo distinto del otro».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en valorar lo distinto del otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren valorar lo distinto del otro más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar una caja para compartir no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-43">
+        <div class="eyebrow">MÓDULO 13 · PLAN 43</div>
+        <h2>Jugamos a compartir con fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan practicar la generosidad con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre compartir.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir un material con otro usando fichas de roles.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fichas de roles en el centro y explica que lo usaremos para compartir un material con otro cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fichas de roles.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir un material con otro: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fichas de roles, manteniendo la consigna de compartir un material con otro.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-44">
+        <div class="eyebrow">MÓDULO 13 · PLAN 44</div>
+        <h2>Exploración libre acompañada para el respeto</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular respetar la palabra del otro respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre el respeto.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a escuchar sin interrumpir usando un libro de cuentos.</li><li>Dispón un libro de cuentos sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede escuchar sin interrumpir?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró escuchar sin interrumpir.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en escuchar sin interrumpir: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda escuchar sin interrumpir con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de escuchar sin interrumpir.</div>
+      </article>
+      <article class="plan" id="plan-45">
+        <div class="eyebrow">MÓDULO 13 · PLAN 45</div>
+        <h2>Descubrimos la amistad con tarjetas de situaciones</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover construir vínculos de amistad en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre la amistad.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar a un amigo usando tarjetas de situaciones.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de situaciones a cada pareja y plantea el reto: juntos van a cuidar a un amigo sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr cuidar a un amigo en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar a un amigo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al cuidar a un amigo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-46">
+        <div class="eyebrow">MÓDULO 13 · PLAN 46</div>
+        <h2>Cuento en acción: la cooperación con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre cooperar por un objetivo común a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a lograr algo entre todos usando una caja para compartir.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita lograr algo entre todos.</li><li>En los momentos clave del relato, entrega una caja para compartir y pide a los niños ayudar al personaje a lograr algo entre todos.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr la cooperación.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en lograr algo entre todos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando una caja para compartir por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-47">
+        <div class="eyebrow">MÓDULO 13 · PLAN 47</div>
+        <h2>Decir la verdad usando fichas de roles</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de valorar la honestidad.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fichas de roles, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer lo que pasó usando fichas de roles.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fichas de roles como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a reconocer lo que pasó.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fichas de roles entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer lo que pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que reconocer lo que pasó se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-48">
+        <div class="eyebrow">MÓDULO 13 · PLAN 48</div>
+        <h2>Jugamos a cuidar las cosas con un libro de cuentos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan desarrollar el cuidado de lo común con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un libro de cuentos, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cuidar los materiales comunes usando un libro de cuentos.</li><li>Prepara un libro de cuentos en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón cuidar los materiales comunes prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al cuidar los materiales comunes.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un libro de cuentos.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cuidar los materiales comunes: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para cuidar los materiales comunes en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-49">
+        <div class="eyebrow">MÓDULO 13 · PLAN 49</div>
+        <h2>Estaciones de juego para pedir por favor</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular incorporar fórmulas de cortesía respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de pedir con amabilidad.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de situaciones, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir con amabilidad usando tarjetas de situaciones.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a pedir con amabilidad.</li><li>Coloca tarjetas de situaciones en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de pedir por favor.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de situaciones.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir con amabilidad: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de situaciones libremente antes de pedir con amabilidad.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-50">
+        <div class="eyebrow">MÓDULO 13 · PLAN 50</div>
+        <h2>Descubrimos incluir a todos con una caja para compartir</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Valores y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover practicar la inclusión en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de invitar a jugar a quien está solo.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>una caja para compartir, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a invitar a jugar a quien está solo usando una caja para compartir.</li><li>Arma un recorrido en el piso con una caja para compartir y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo invitar a jugar a quien está solo en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a invitar a jugar a quien está solo».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en invitar a jugar a quien está solo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren invitar a jugar a quien está solo más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article></main>
+  </div>
+</body></html>

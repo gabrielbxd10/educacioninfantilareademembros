@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 02 — Lenguaje y Comunicación · Aula Creativa</title>
+<style>
+  :root{--ac:#5FB0E5;--ink:#2D2A45;--soft:#5B5773;--line:#E9E4EF;--bg:#F7F9FC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+  .top{background:var(--ac);color:#fff;padding:26px 22px;position:sticky;top:0;z-index:5}
+  .top .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .top a.back{color:#fff;font-weight:700;opacity:.9;text-decoration:none}
+  .top h1{font-size:1.3rem;flex:1;min-width:200px}
+  .top .dl{background:#fff;color:var(--ac);font-weight:800;padding:10px 18px;border-radius:40px;text-decoration:none}
+  .layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:240px 1fr;gap:30px;padding:26px 22px}
+  nav{position:sticky;top:110px;align-self:start;max-height:80vh;overflow:auto;border-right:1px solid var(--line);padding-right:14px}
+  nav a{display:block;font-size:.82rem;color:var(--soft);text-decoration:none;padding:6px 8px;border-radius:8px}
+  nav a:hover{background:var(--bg);color:var(--ink)}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:26px;box-shadow:0 6px 20px rgba(45,42,69,.05)}
+  .eyebrow{color:var(--ac);font-weight:800;font-size:.75rem;letter-spacing:1px;margin-bottom:6px}
+  .plan h2{font-size:1.5rem;margin-bottom:14px}
+  .ficha{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .ficha div{padding:12px 16px;border-right:1px solid var(--line)}
+  .ficha div:last-child{border-right:none}
+  .ficha span{display:block;font-size:.65rem;color:var(--soft);font-weight:700;letter-spacing:.5px}
+  .ficha b{font-size:1rem}
+  .lbl{color:var(--ac);font-weight:800;font-size:.8rem;letter-spacing:.5px;margin:16px 0 6px}
+  .box{background:color-mix(in srgb,var(--ac) 9%,#fff);border-left:3px solid var(--ac);
+        border-radius:10px;padding:12px 16px;margin:14px 0}
+  .box.soft{margin:10px 0}
+  .box .bl{color:var(--ac);font-weight:800;font-size:.72rem;letter-spacing:.6px;margin-bottom:3px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0}
+  ul.dot{list-style:none} ul.dot li{padding-left:16px;position:relative;margin-bottom:3px}
+  ul.dot li:before{content:'•';color:var(--ac);position:absolute;left:0;font-weight:900}
+  ol.steps{padding-left:4px;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;position:relative;margin-bottom:9px}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;background:var(--ac);color:#fff;
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:800}
+  @media(max-width:820px){.layout{grid-template-columns:1fr}nav{display:none}.two{grid-template-columns:1fr}}
+</style></head><body>
+  <div class="top"><div class="wrap">
+    <a class="back" href="../index.html">← Volver</a>
+    <h1>Módulo 02 · Lenguaje y Comunicación</h1>
+    <a class="dl" href="../pdf/02-lenguaje-comunicacion.pdf" download>⬇ Descargar PDF</a>
+  </div></div>
+  <div class="layout">
+    <nav><a href="#plan-1">01. Estaciones de juego: nombrar objetos con tarjetas de vocabulario</a><a href="#plan-2">02. Sonidos de animales usando tarjetas de animales</a><a href="#plan-3">03. Jugamos a rimas y versos con fotos de la familia</a><a href="#plan-4">04. Exploración libre acompañada para describir imágenes</a><a href="#plan-5">05. Descubrimos contar lo vivido con tarjetas de vocabulario</a><a href="#plan-6">06. Cuento en acción: adivinanzas con tarjetas de animales</a><a href="#plan-7">07. Preguntas y respuestas usando fotos de la familia</a><a href="#plan-8">08. Jugamos a vocabulario de la casa con figuras de fieltro</a><a href="#plan-9">09. Estaciones de juego para palabras nuevas</a><a href="#plan-10">10. Descubrimos sonidos iniciales con tarjetas de animales</a><a href="#plan-11">11. Juego en ronda: contar un cuento conocido con fotos de la familia</a><a href="#plan-12">12. Expresar gustos usando figuras de fieltro</a><a href="#plan-13">13. Jugamos a instrucciones simples con tarjetas de vocabulario</a><a href="#plan-14">14. Cuento en acción para teléfono de palabras</a><a href="#plan-15">15. Descubrimos nombrar objetos con fotos de la familia</a><a href="#plan-16">16. Reto sensorial dirigido: sonidos de animales con figuras de fieltro</a><a href="#plan-17">17. Rimas y versos usando tarjetas de vocabulario</a><a href="#plan-18">18. Jugamos a describir imágenes con tarjetas de animales</a><a href="#plan-19">19. Juego en ronda para contar lo vivido</a><a href="#plan-20">20. Descubrimos adivinanzas con figuras de fieltro</a><a href="#plan-21">21. Desafío por parejas: preguntas y respuestas con tarjetas de vocabulario</a><a href="#plan-22">22. Vocabulario de la casa usando tarjetas de animales</a><a href="#plan-23">23. Jugamos a palabras nuevas con fotos de la familia</a><a href="#plan-24">24. Reto sensorial dirigido para sonidos iniciales</a><a href="#plan-25">25. Descubrimos contar un cuento conocido con tarjetas de vocabulario</a><a href="#plan-26">26. Circuito guiado: expresar gustos con tarjetas de animales</a><a href="#plan-27">27. Instrucciones simples usando fotos de la familia</a><a href="#plan-28">28. Jugamos a teléfono de palabras con figuras de fieltro</a><a href="#plan-29">29. Desafío por parejas para nombrar objetos</a><a href="#plan-30">30. Descubrimos sonidos de animales con tarjetas de animales</a><a href="#plan-31">31. Juego de mesa colectivo: rimas y versos con fotos de la familia</a><a href="#plan-32">32. Describir imágenes usando figuras de fieltro</a><a href="#plan-33">33. Jugamos a contar lo vivido con tarjetas de vocabulario</a><a href="#plan-34">34. Circuito guiado para adivinanzas</a><a href="#plan-35">35. Descubrimos preguntas y respuestas con fotos de la familia</a><a href="#plan-36">36. Exploración libre acompañada: vocabulario de la casa con figuras de fieltro</a><a href="#plan-37">37. Palabras nuevas usando tarjetas de vocabulario</a><a href="#plan-38">38. Jugamos a sonidos iniciales con tarjetas de animales</a><a href="#plan-39">39. Juego de mesa colectivo para contar un cuento conocido</a><a href="#plan-40">40. Descubrimos expresar gustos con figuras de fieltro</a><a href="#plan-41">41. Estaciones de juego: instrucciones simples con tarjetas de vocabulario</a><a href="#plan-42">42. Teléfono de palabras usando tarjetas de animales</a><a href="#plan-43">43. Jugamos a nombrar objetos con fotos de la familia</a><a href="#plan-44">44. Exploración libre acompañada para sonidos de animales</a><a href="#plan-45">45. Descubrimos rimas y versos con tarjetas de vocabulario</a><a href="#plan-46">46. Cuento en acción: describir imágenes con tarjetas de animales</a><a href="#plan-47">47. Contar lo vivido usando fotos de la familia</a><a href="#plan-48">48. Jugamos a adivinanzas con figuras de fieltro</a><a href="#plan-49">49. Estaciones de juego para preguntas y respuestas</a><a href="#plan-50">50. Descubrimos vocabulario de la casa con tarjetas de animales</a></nav>
+    <main>
+      <article class="plan" id="plan-1">
+        <div class="eyebrow">MÓDULO 02 · PLAN 01</div>
+        <h2>Estaciones de juego: nombrar objetos con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre ampliar el vocabulario cotidiano a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de nombrar lo que ven y tocan.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar lo que ven y tocan usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a nombrar lo que ven y tocan.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de nombrar objetos.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar lo que ven y tocan: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir nombrar lo que ven y tocan.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-2">
+        <div class="eyebrow">MÓDULO 02 · PLAN 02</div>
+        <h2>Sonidos de animales usando tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de asociar sonido y significado.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a imitar sonidos de animales usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo imitar sonidos de animales en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a imitar sonidos de animales».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en imitar sonidos de animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren imitar sonidos de animales más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-3">
+        <div class="eyebrow">MÓDULO 02 · PLAN 03</div>
+        <h2>Jugamos a rimas y versos con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan desarrollar la conciencia de los sonidos con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre rimas y versos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a repetir rimas sencillas usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para repetir rimas sencillas cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en repetir rimas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de repetir rimas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-4">
+        <div class="eyebrow">MÓDULO 02 · PLAN 04</div>
+        <h2>Exploración libre acompañada para describir imágenes</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular construir frases más completas respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre describir imágenes.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a describir lo que aparece en una lámina usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede describir lo que aparece en una lámina?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró describir lo que aparece en una lámina.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en describir lo que aparece en una lámina: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda describir lo que aparece en una lámina con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten figuras de fieltro preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-5">
+        <div class="eyebrow">MÓDULO 02 · PLAN 05</div>
+        <h2>Descubrimos contar lo vivido con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover relatar hechos en secuencia en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre contar lo vivido.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a contar algo que les pasó usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a contar algo que les pasó sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr contar algo que les pasó en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en contar algo que les pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al contar algo que les pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a contar algo que les pasó.</div>
+      </article>
+      <article class="plan" id="plan-6">
+        <div class="eyebrow">MÓDULO 02 · PLAN 06</div>
+        <h2>Cuento en acción: adivinanzas con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre escuchar con atención y deducir a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a adivinar por pistas usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita adivinar por pistas.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a adivinar por pistas.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr adivinanzas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en adivinar por pistas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de animales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-7">
+        <div class="eyebrow">MÓDULO 02 · PLAN 07</div>
+        <h2>Preguntas y respuestas usando fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de mantener un diálogo por turnos.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a responder preguntas sencillas usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a responder preguntas sencillas.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en responder preguntas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que responder preguntas sencillas se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-8">
+        <div class="eyebrow">MÓDULO 02 · PLAN 08</div>
+        <h2>Jugamos a vocabulario de la casa con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan relacionar palabras con su entorno con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar objetos del hogar usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón nombrar objetos del hogar prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al nombrar objetos del hogar.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar objetos del hogar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para nombrar objetos del hogar en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de nombrar objetos del hogar.</div>
+      </article>
+      <article class="plan" id="plan-9">
+        <div class="eyebrow">MÓDULO 02 · PLAN 09</div>
+        <h2>Estaciones de juego para palabras nuevas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular enriquecer el lenguaje respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de incorporar una palabra nueva.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a incorporar una palabra nueva usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a incorporar una palabra nueva.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de palabras nuevas.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en incorporar una palabra nueva: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir incorporar una palabra nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-10">
+        <div class="eyebrow">MÓDULO 02 · PLAN 10</div>
+        <h2>Descubrimos sonidos iniciales con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover iniciar la conciencia fonológica en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de reconocer con qué sonido empieza una palabra.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer con qué sonido empieza una palabra usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo reconocer con qué sonido empieza una palabra en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a reconocer con qué sonido empieza una palabra».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer con qué sonido empieza una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren reconocer con qué sonido empieza una palabra más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-11">
+        <div class="eyebrow">MÓDULO 02 · PLAN 11</div>
+        <h2>Juego en ronda: contar un cuento conocido con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre ordenar una historia a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de recontar un cuento con sus palabras.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a recontar un cuento con sus palabras usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para recontar un cuento con sus palabras cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en recontar un cuento con sus palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de recontar un cuento con sus palabras.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-12">
+        <div class="eyebrow">MÓDULO 02 · PLAN 12</div>
+        <h2>Expresar gustos usando figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de expresar preferencias con argumentos simples.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a decir qué les gusta y por qué usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede decir qué les gusta y por qué?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró decir qué les gusta y por qué.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en decir qué les gusta y por qué: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda decir qué les gusta y por qué con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-13">
+        <div class="eyebrow">MÓDULO 02 · PLAN 13</div>
+        <h2>Jugamos a instrucciones simples con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan comprender el lenguaje oral con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre instrucciones simples.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir una consigna de dos pasos usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a seguir una consigna de dos pasos sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr seguir una consigna de dos pasos en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir una consigna de dos pasos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al seguir una consigna de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-14">
+        <div class="eyebrow">MÓDULO 02 · PLAN 14</div>
+        <h2>Cuento en acción para teléfono de palabras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular escuchar y reproducir con precisión respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre teléfono de palabras.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar un mensaje de oído a oído usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita pasar un mensaje de oído a oído.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a pasar un mensaje de oído a oído.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr teléfono de palabras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar un mensaje de oído a oído: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-15">
+        <div class="eyebrow">MÓDULO 02 · PLAN 15</div>
+        <h2>Descubrimos nombrar objetos con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover ampliar el vocabulario cotidiano en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre nombrar objetos.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar lo que ven y tocan usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a nombrar lo que ven y tocan.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar lo que ven y tocan: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que nombrar lo que ven y tocan se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-16">
+        <div class="eyebrow">MÓDULO 02 · PLAN 16</div>
+        <h2>Reto sensorial dirigido: sonidos de animales con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre asociar sonido y significado a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a imitar sonidos de animales usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón imitar sonidos de animales prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al imitar sonidos de animales.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en imitar sonidos de animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para imitar sonidos de animales en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten figuras de fieltro preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-17">
+        <div class="eyebrow">MÓDULO 02 · PLAN 17</div>
+        <h2>Rimas y versos usando tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de desarrollar la conciencia de los sonidos.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a repetir rimas sencillas usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a repetir rimas sencillas.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de rimas y versos.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en repetir rimas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir repetir rimas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a repetir rimas sencillas.</div>
+      </article>
+      <article class="plan" id="plan-18">
+        <div class="eyebrow">MÓDULO 02 · PLAN 18</div>
+        <h2>Jugamos a describir imágenes con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan construir frases más completas con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a describir lo que aparece en una lámina usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo describir lo que aparece en una lámina en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a describir lo que aparece en una lámina».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en describir lo que aparece en una lámina: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren describir lo que aparece en una lámina más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de animales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-19">
+        <div class="eyebrow">MÓDULO 02 · PLAN 19</div>
+        <h2>Juego en ronda para contar lo vivido</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular relatar hechos en secuencia respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de contar algo que les pasó.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a contar algo que les pasó usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para contar algo que les pasó cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en contar algo que les pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de contar algo que les pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-20">
+        <div class="eyebrow">MÓDULO 02 · PLAN 20</div>
+        <h2>Descubrimos adivinanzas con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover escuchar con atención y deducir en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de adivinar por pistas.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a adivinar por pistas usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede adivinar por pistas?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró adivinar por pistas.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en adivinar por pistas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda adivinar por pistas con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de adivinar por pistas.</div>
+      </article>
+      <article class="plan" id="plan-21">
+        <div class="eyebrow">MÓDULO 02 · PLAN 21</div>
+        <h2>Desafío por parejas: preguntas y respuestas con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre mantener un diálogo por turnos a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de responder preguntas sencillas.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a responder preguntas sencillas usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a responder preguntas sencillas sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr responder preguntas sencillas en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en responder preguntas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al responder preguntas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-22">
+        <div class="eyebrow">MÓDULO 02 · PLAN 22</div>
+        <h2>Vocabulario de la casa usando tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de relacionar palabras con su entorno.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar objetos del hogar usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita nombrar objetos del hogar.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a nombrar objetos del hogar.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr vocabulario de la casa.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar objetos del hogar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-23">
+        <div class="eyebrow">MÓDULO 02 · PLAN 23</div>
+        <h2>Jugamos a palabras nuevas con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan enriquecer el lenguaje con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre palabras nuevas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a incorporar una palabra nueva usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a incorporar una palabra nueva.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en incorporar una palabra nueva: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que incorporar una palabra nueva se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-24">
+        <div class="eyebrow">MÓDULO 02 · PLAN 24</div>
+        <h2>Reto sensorial dirigido para sonidos iniciales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular iniciar la conciencia fonológica respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre sonidos iniciales.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer con qué sonido empieza una palabra usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón reconocer con qué sonido empieza una palabra prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al reconocer con qué sonido empieza una palabra.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer con qué sonido empieza una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para reconocer con qué sonido empieza una palabra en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-25">
+        <div class="eyebrow">MÓDULO 02 · PLAN 25</div>
+        <h2>Descubrimos contar un cuento conocido con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover ordenar una historia en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre contar un cuento conocido.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a recontar un cuento con sus palabras usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a recontar un cuento con sus palabras.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de contar un cuento conocido.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en recontar un cuento con sus palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir recontar un cuento con sus palabras.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-26">
+        <div class="eyebrow">MÓDULO 02 · PLAN 26</div>
+        <h2>Circuito guiado: expresar gustos con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre expresar preferencias con argumentos simples a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a decir qué les gusta y por qué usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo decir qué les gusta y por qué en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a decir qué les gusta y por qué».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en decir qué les gusta y por qué: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren decir qué les gusta y por qué más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-27">
+        <div class="eyebrow">MÓDULO 02 · PLAN 27</div>
+        <h2>Instrucciones simples usando fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de comprender el lenguaje oral.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir una consigna de dos pasos usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para seguir una consigna de dos pasos cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir una consigna de dos pasos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de seguir una consigna de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-28">
+        <div class="eyebrow">MÓDULO 02 · PLAN 28</div>
+        <h2>Jugamos a teléfono de palabras con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan escuchar y reproducir con precisión con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar un mensaje de oído a oído usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede pasar un mensaje de oído a oído?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró pasar un mensaje de oído a oído.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar un mensaje de oído a oído: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda pasar un mensaje de oído a oído con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten figuras de fieltro preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-29">
+        <div class="eyebrow">MÓDULO 02 · PLAN 29</div>
+        <h2>Desafío por parejas para nombrar objetos</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular ampliar el vocabulario cotidiano respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de nombrar lo que ven y tocan.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar lo que ven y tocan usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a nombrar lo que ven y tocan sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr nombrar lo que ven y tocan en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar lo que ven y tocan: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al nombrar lo que ven y tocan.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a nombrar lo que ven y tocan.</div>
+      </article>
+      <article class="plan" id="plan-30">
+        <div class="eyebrow">MÓDULO 02 · PLAN 30</div>
+        <h2>Descubrimos sonidos de animales con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover asociar sonido y significado en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de imitar sonidos de animales.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a imitar sonidos de animales usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita imitar sonidos de animales.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a imitar sonidos de animales.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr sonidos de animales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en imitar sonidos de animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de animales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-31">
+        <div class="eyebrow">MÓDULO 02 · PLAN 31</div>
+        <h2>Juego de mesa colectivo: rimas y versos con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre desarrollar la conciencia de los sonidos a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de repetir rimas sencillas.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a repetir rimas sencillas usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a repetir rimas sencillas.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en repetir rimas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que repetir rimas sencillas se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-32">
+        <div class="eyebrow">MÓDULO 02 · PLAN 32</div>
+        <h2>Describir imágenes usando figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de construir frases más completas.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a describir lo que aparece en una lámina usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón describir lo que aparece en una lámina prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al describir lo que aparece en una lámina.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en describir lo que aparece en una lámina: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para describir lo que aparece en una lámina en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de describir lo que aparece en una lámina.</div>
+      </article>
+      <article class="plan" id="plan-33">
+        <div class="eyebrow">MÓDULO 02 · PLAN 33</div>
+        <h2>Jugamos a contar lo vivido con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan relatar hechos en secuencia con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre contar lo vivido.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a contar algo que les pasó usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a contar algo que les pasó.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de contar lo vivido.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en contar algo que les pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir contar algo que les pasó.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-34">
+        <div class="eyebrow">MÓDULO 02 · PLAN 34</div>
+        <h2>Circuito guiado para adivinanzas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular escuchar con atención y deducir respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre adivinanzas.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a adivinar por pistas usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo adivinar por pistas en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a adivinar por pistas».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en adivinar por pistas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren adivinar por pistas más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-35">
+        <div class="eyebrow">MÓDULO 02 · PLAN 35</div>
+        <h2>Descubrimos preguntas y respuestas con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover mantener un diálogo por turnos en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre preguntas y respuestas.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a responder preguntas sencillas usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para responder preguntas sencillas cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en responder preguntas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de responder preguntas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-36">
+        <div class="eyebrow">MÓDULO 02 · PLAN 36</div>
+        <h2>Exploración libre acompañada: vocabulario de la casa con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre relacionar palabras con su entorno a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar objetos del hogar usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede nombrar objetos del hogar?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró nombrar objetos del hogar.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar objetos del hogar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda nombrar objetos del hogar con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-37">
+        <div class="eyebrow">MÓDULO 02 · PLAN 37</div>
+        <h2>Palabras nuevas usando tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de enriquecer el lenguaje.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a incorporar una palabra nueva usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a incorporar una palabra nueva sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr incorporar una palabra nueva en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en incorporar una palabra nueva: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al incorporar una palabra nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-38">
+        <div class="eyebrow">MÓDULO 02 · PLAN 38</div>
+        <h2>Jugamos a sonidos iniciales con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan iniciar la conciencia fonológica con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a reconocer con qué sonido empieza una palabra usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita reconocer con qué sonido empieza una palabra.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a reconocer con qué sonido empieza una palabra.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr sonidos iniciales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en reconocer con qué sonido empieza una palabra: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-39">
+        <div class="eyebrow">MÓDULO 02 · PLAN 39</div>
+        <h2>Juego de mesa colectivo para contar un cuento conocido</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular ordenar una historia respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de recontar un cuento con sus palabras.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a recontar un cuento con sus palabras usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a recontar un cuento con sus palabras.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en recontar un cuento con sus palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que recontar un cuento con sus palabras se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-40">
+        <div class="eyebrow">MÓDULO 02 · PLAN 40</div>
+        <h2>Descubrimos expresar gustos con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover expresar preferencias con argumentos simples en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de decir qué les gusta y por qué.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a decir qué les gusta y por qué usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón decir qué les gusta y por qué prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al decir qué les gusta y por qué.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en decir qué les gusta y por qué: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para decir qué les gusta y por qué en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten figuras de fieltro preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-41">
+        <div class="eyebrow">MÓDULO 02 · PLAN 41</div>
+        <h2>Estaciones de juego: instrucciones simples con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre comprender el lenguaje oral a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de seguir una consigna de dos pasos.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir una consigna de dos pasos usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a seguir una consigna de dos pasos.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de instrucciones simples.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir una consigna de dos pasos: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir seguir una consigna de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a seguir una consigna de dos pasos.</div>
+      </article>
+      <article class="plan" id="plan-42">
+        <div class="eyebrow">MÓDULO 02 · PLAN 42</div>
+        <h2>Teléfono de palabras usando tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de escuchar y reproducir con precisión.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar un mensaje de oído a oído usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo pasar un mensaje de oído a oído en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a pasar un mensaje de oído a oído».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar un mensaje de oído a oído: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren pasar un mensaje de oído a oído más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar tarjetas de animales no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-43">
+        <div class="eyebrow">MÓDULO 02 · PLAN 43</div>
+        <h2>Jugamos a nombrar objetos con fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan ampliar el vocabulario cotidiano con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre nombrar objetos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar lo que ven y tocan usando fotos de la familia.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta fotos de la familia en el centro y explica que lo usaremos para nombrar lo que ven y tocan cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con fotos de la familia.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar lo que ven y tocan: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de fotos de la familia, manteniendo la consigna de nombrar lo que ven y tocan.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-44">
+        <div class="eyebrow">MÓDULO 02 · PLAN 44</div>
+        <h2>Exploración libre acompañada para sonidos de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular asociar sonido y significado respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre sonidos de animales.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a imitar sonidos de animales usando figuras de fieltro.</li><li>Dispón figuras de fieltro sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede imitar sonidos de animales?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró imitar sonidos de animales.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en imitar sonidos de animales: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda imitar sonidos de animales con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de imitar sonidos de animales.</div>
+      </article>
+      <article class="plan" id="plan-45">
+        <div class="eyebrow">MÓDULO 02 · PLAN 45</div>
+        <h2>Descubrimos rimas y versos con tarjetas de vocabulario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover desarrollar la conciencia de los sonidos en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre rimas y versos.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a repetir rimas sencillas usando tarjetas de vocabulario.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega tarjetas de vocabulario a cada pareja y plantea el reto: juntos van a repetir rimas sencillas sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr repetir rimas sencillas en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en repetir rimas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al repetir rimas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-46">
+        <div class="eyebrow">MÓDULO 02 · PLAN 46</div>
+        <h2>Cuento en acción: describir imágenes con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre construir frases más completas a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a describir lo que aparece en una lámina usando tarjetas de animales.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita describir lo que aparece en una lámina.</li><li>En los momentos clave del relato, entrega tarjetas de animales y pide a los niños ayudar al personaje a describir lo que aparece en una lámina.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr describir imágenes.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en describir lo que aparece en una lámina: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando tarjetas de animales por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-47">
+        <div class="eyebrow">MÓDULO 02 · PLAN 47</div>
+        <h2>Contar lo vivido usando fotos de la familia</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de relatar hechos en secuencia.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>fotos de la familia, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a contar algo que les pasó usando fotos de la familia.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta fotos de la familia como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a contar algo que les pasó.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden fotos de la familia entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en contar algo que les pasó: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que contar algo que les pasó se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-48">
+        <div class="eyebrow">MÓDULO 02 · PLAN 48</div>
+        <h2>Jugamos a adivinanzas con figuras de fieltro</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan escuchar con atención y deducir con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>figuras de fieltro, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a adivinar por pistas usando figuras de fieltro.</li><li>Prepara figuras de fieltro en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón adivinar por pistas prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al adivinar por pistas.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de figuras de fieltro.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en adivinar por pistas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para adivinar por pistas en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-49">
+        <div class="eyebrow">MÓDULO 02 · PLAN 49</div>
+        <h2>Estaciones de juego para preguntas y respuestas</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular mantener un diálogo por turnos respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de responder preguntas sencillas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de vocabulario, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a responder preguntas sencillas usando tarjetas de vocabulario.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a responder preguntas sencillas.</li><li>Coloca tarjetas de vocabulario en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de preguntas y respuestas.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con tarjetas de vocabulario.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en responder preguntas sencillas: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren tarjetas de vocabulario libremente antes de pedir responder preguntas sencillas.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-50">
+        <div class="eyebrow">MÓDULO 02 · PLAN 50</div>
+        <h2>Descubrimos vocabulario de la casa con tarjetas de animales</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Lenguaje y comunicación oral</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover relacionar palabras con su entorno en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de nombrar objetos del hogar.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>tarjetas de animales, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a nombrar objetos del hogar usando tarjetas de animales.</li><li>Arma un recorrido en el piso con tarjetas de animales y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo nombrar objetos del hogar en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a nombrar objetos del hogar».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en nombrar objetos del hogar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren nombrar objetos del hogar más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article></main>
+  </div>
+</body></html>

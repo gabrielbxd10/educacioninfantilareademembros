@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 01 — Fundamentos y Rutinas · Aula Creativa</title>
+<style>
+  :root{--ac:#FF8E72;--ink:#2D2A45;--soft:#5B5773;--line:#E9E4EF;--bg:#F7F9FC}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#fff;color:var(--ink);line-height:1.6}
+  .top{background:var(--ac);color:#fff;padding:26px 22px;position:sticky;top:0;z-index:5}
+  .top .wrap{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .top a.back{color:#fff;font-weight:700;opacity:.9;text-decoration:none}
+  .top h1{font-size:1.3rem;flex:1;min-width:200px}
+  .top .dl{background:#fff;color:var(--ac);font-weight:800;padding:10px 18px;border-radius:40px;text-decoration:none}
+  .layout{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:240px 1fr;gap:30px;padding:26px 22px}
+  nav{position:sticky;top:110px;align-self:start;max-height:80vh;overflow:auto;border-right:1px solid var(--line);padding-right:14px}
+  nav a{display:block;font-size:.82rem;color:var(--soft);text-decoration:none;padding:6px 8px;border-radius:8px}
+  nav a:hover{background:var(--bg);color:var(--ink)}
+  .plan{border:1px solid var(--line);border-radius:18px;padding:30px;margin-bottom:26px;box-shadow:0 6px 20px rgba(45,42,69,.05)}
+  .eyebrow{color:var(--ac);font-weight:800;font-size:.75rem;letter-spacing:1px;margin-bottom:6px}
+  .plan h2{font-size:1.5rem;margin-bottom:14px}
+  .ficha{display:grid;grid-template-columns:repeat(3,1fr);background:var(--bg);border-radius:12px;overflow:hidden;margin-bottom:16px}
+  .ficha div{padding:12px 16px;border-right:1px solid var(--line)}
+  .ficha div:last-child{border-right:none}
+  .ficha span{display:block;font-size:.65rem;color:var(--soft);font-weight:700;letter-spacing:.5px}
+  .ficha b{font-size:1rem}
+  .lbl{color:var(--ac);font-weight:800;font-size:.8rem;letter-spacing:.5px;margin:16px 0 6px}
+  .box{background:color-mix(in srgb,var(--ac) 9%,#fff);border-left:3px solid var(--ac);
+        border-radius:10px;padding:12px 16px;margin:14px 0}
+  .box.soft{margin:10px 0}
+  .box .bl{color:var(--ac);font-weight:800;font-size:.72rem;letter-spacing:.6px;margin-bottom:3px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:8px 0}
+  ul.dot{list-style:none} ul.dot li{padding-left:16px;position:relative;margin-bottom:3px}
+  ul.dot li:before{content:'•';color:var(--ac);position:absolute;left:0;font-weight:900}
+  ol.steps{padding-left:4px;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;position:relative;margin-bottom:9px}
+  ol.steps li:before{content:counter(s);position:absolute;left:0;top:0;background:var(--ac);color:#fff;
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:.78rem;font-weight:800}
+  @media(max-width:820px){.layout{grid-template-columns:1fr}nav{display:none}.two{grid-template-columns:1fr}}
+</style></head><body>
+  <div class="top"><div class="wrap">
+    <a class="back" href="../index.html">← Volver</a>
+    <h1>Módulo 01 · Fundamentos y Rutinas</h1>
+    <a class="dl" href="../pdf/01-fundamentos-rutinas.pdf" download>⬇ Descargar PDF</a>
+  </div></div>
+  <div class="layout">
+    <nav><a href="#plan-1">01. Estaciones de juego: el saludo diario con un calendario de tela</a><a href="#plan-2">02. La asamblea usando etiquetas con nombres</a><a href="#plan-3">03. Jugamos al calendario con un títere guía</a><a href="#plan-4">04. Exploración libre acompañada para guardar los juguetes</a><a href="#plan-5">05. Descubrimos las normas del aula con un calendario de tela</a><a href="#plan-6">06. Cuento en acción: esperar el turno con etiquetas con nombres</a><a href="#plan-7">07. Elegir un rincón usando un títere guía</a><a href="#plan-8">08. Jugamos a reconocer su nombre con un reloj de juguete</a><a href="#plan-9">09. Estaciones de juego para el ayudante del día</a><a href="#plan-10">10. Descubrimos la rutina del baño con etiquetas con nombres</a><a href="#plan-11">11. Juego en ronda: la merienda compartida con un títere guía</a><a href="#plan-12">12. Transición tranquila usando un reloj de juguete</a><a href="#plan-13">13. Jugamos a ordenar sus cosas con un calendario de tela</a><a href="#plan-14">14. Cuento en acción para pedir con palabras</a><a href="#plan-15">15. Descubrimos el saludo diario con un títere guía</a><a href="#plan-16">16. Reto sensorial dirigido: la asamblea con un reloj de juguete</a><a href="#plan-17">17. El calendario usando un calendario de tela</a><a href="#plan-18">18. Jugamos a guardar los juguetes con etiquetas con nombres</a><a href="#plan-19">19. Juego en ronda para las normas del aula</a><a href="#plan-20">20. Descubrimos esperar el turno con un reloj de juguete</a><a href="#plan-21">21. Desafío por parejas: elegir un rincón con un calendario de tela</a><a href="#plan-22">22. Reconocer su nombre usando etiquetas con nombres</a><a href="#plan-23">23. Jugamos al ayudante del día con un títere guía</a><a href="#plan-24">24. Reto sensorial dirigido para la rutina del baño</a><a href="#plan-25">25. Descubrimos la merienda compartida con un calendario de tela</a><a href="#plan-26">26. Circuito guiado: transición tranquila con etiquetas con nombres</a><a href="#plan-27">27. Ordenar sus cosas usando un títere guía</a><a href="#plan-28">28. Jugamos a pedir con palabras con un reloj de juguete</a><a href="#plan-29">29. Desafío por parejas para el saludo diario</a><a href="#plan-30">30. Descubrimos la asamblea con etiquetas con nombres</a><a href="#plan-31">31. Juego de mesa colectivo: el calendario con un títere guía</a><a href="#plan-32">32. Guardar los juguetes usando un reloj de juguete</a><a href="#plan-33">33. Jugamos a las normas del aula con un calendario de tela</a><a href="#plan-34">34. Circuito guiado para esperar el turno</a><a href="#plan-35">35. Descubrimos elegir un rincón con un títere guía</a><a href="#plan-36">36. Exploración libre acompañada: reconocer su nombre con un reloj de juguete</a><a href="#plan-37">37. El ayudante del día usando un calendario de tela</a><a href="#plan-38">38. Jugamos a la rutina del baño con etiquetas con nombres</a><a href="#plan-39">39. Juego de mesa colectivo para la merienda compartida</a><a href="#plan-40">40. Descubrimos transición tranquila con un reloj de juguete</a><a href="#plan-41">41. Estaciones de juego: ordenar sus cosas con un calendario de tela</a><a href="#plan-42">42. Pedir con palabras usando etiquetas con nombres</a><a href="#plan-43">43. Jugamos al saludo diario con un títere guía</a><a href="#plan-44">44. Exploración libre acompañada para la asamblea</a><a href="#plan-45">45. Descubrimos el calendario con un calendario de tela</a><a href="#plan-46">46. Cuento en acción: guardar los juguetes con etiquetas con nombres</a><a href="#plan-47">47. Las normas del aula usando un títere guía</a><a href="#plan-48">48. Jugamos a esperar el turno con un reloj de juguete</a><a href="#plan-49">49. Estaciones de juego para elegir un rincón</a><a href="#plan-50">50. Descubrimos reconocer su nombre con etiquetas con nombres</a></nav>
+    <main>
+      <article class="plan" id="plan-1">
+        <div class="eyebrow">MÓDULO 01 · PLAN 01</div>
+        <h2>Estaciones de juego: el saludo diario con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre saludar y reconocer a sus compañeros a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de saludar a los compañeros al llegar.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saludar a los compañeros al llegar usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a saludar a los compañeros al llegar.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento del saludo diario.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saludar a los compañeros al llegar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir saludar a los compañeros al llegar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-2">
+        <div class="eyebrow">MÓDULO 01 · PLAN 02</div>
+        <h2>La asamblea usando etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de expresar ideas en la asamblea por turnos.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a participar en la ronda de la mañana usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo participar en la ronda de la mañana en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a participar en la ronda de la mañana».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en participar en la ronda de la mañana: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren participar en la ronda de la mañana más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-3">
+        <div class="eyebrow">MÓDULO 01 · PLAN 03</div>
+        <h2>Jugamos al calendario con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan reconocer los días de la semana con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre el calendario.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar el día en el calendario usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para ubicar el día en el calendario cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar el día en el calendario: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de ubicar el día en el calendario.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-4">
+        <div class="eyebrow">MÓDULO 01 · PLAN 04</div>
+        <h2>Exploración libre acompañada para guardar los juguetes</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular guardar y ordenar de forma autónoma respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre guardar los juguetes.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar los materiales al terminar usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede ordenar los materiales al terminar?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró ordenar los materiales al terminar.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar los materiales al terminar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda ordenar los materiales al terminar con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un reloj de juguete preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-5">
+        <div class="eyebrow">MÓDULO 01 · PLAN 05</div>
+        <h2>Descubrimos las normas del aula con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover respetar las normas de convivencia en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre las normas del aula.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir un acuerdo del grupo usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a seguir un acuerdo del grupo sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr seguir un acuerdo del grupo en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir un acuerdo del grupo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al seguir un acuerdo del grupo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a seguir un acuerdo del grupo.</div>
+      </article>
+      <article class="plan" id="plan-6">
+        <div class="eyebrow">MÓDULO 01 · PLAN 06</div>
+        <h2>Cuento en acción: esperar el turno con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre esperar su turno con paciencia a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a formar una fila y esperar el turno usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita formar una fila y esperar el turno.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a formar una fila y esperar el turno.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr esperar el turno.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en formar una fila y esperar el turno: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar etiquetas con nombres no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-7">
+        <div class="eyebrow">MÓDULO 01 · PLAN 07</div>
+        <h2>Elegir un rincón usando un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de tomar decisiones sobre su propio juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a elegir un rincón de juego usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a elegir un rincón de juego.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en elegir un rincón de juego: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que elegir un rincón de juego se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-8">
+        <div class="eyebrow">MÓDULO 01 · PLAN 08</div>
+        <h2>Jugamos a reconocer su nombre con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan reconocer su nombre y sus pertenencias con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a identificar su nombre escrito usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón identificar su nombre escrito prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al identificar su nombre escrito.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en identificar su nombre escrito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para identificar su nombre escrito en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de identificar su nombre escrito.</div>
+      </article>
+      <article class="plan" id="plan-9">
+        <div class="eyebrow">MÓDULO 01 · PLAN 09</div>
+        <h2>Estaciones de juego para el ayudante del día</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular asumir pequeñas responsabilidades respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de cumplir una tarea de ayudante.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea de ayudante usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a cumplir una tarea de ayudante.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento del ayudante del día.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea de ayudante: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir cumplir una tarea de ayudante.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-10">
+        <div class="eyebrow">MÓDULO 01 · PLAN 10</div>
+        <h2>Descubrimos la rutina del baño con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover incorporar la rutina de higiene en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de seguir los pasos de higiene.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir los pasos de higiene usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo seguir los pasos de higiene en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a seguir los pasos de higiene».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir los pasos de higiene: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren seguir los pasos de higiene más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-11">
+        <div class="eyebrow">MÓDULO 01 · PLAN 11</div>
+        <h2>Juego en ronda: la merienda compartida con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre desarrollar hábitos en la comida a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de compartir la merienda con orden.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir la merienda con orden usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para compartir la merienda con orden cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir la merienda con orden: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de compartir la merienda con orden.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-12">
+        <div class="eyebrow">MÓDULO 01 · PLAN 12</div>
+        <h2>Transición tranquila usando un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de manejar las transiciones del día.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar de una actividad a otra con calma usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede pasar de una actividad a otra con calma?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró pasar de una actividad a otra con calma.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar de una actividad a otra con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda pasar de una actividad a otra con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-13">
+        <div class="eyebrow">MÓDULO 01 · PLAN 13</div>
+        <h2>Jugamos a ordenar sus cosas con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan organizar sus pertenencias con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre ordenar sus cosas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar su mochila en su lugar usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a ubicar su mochila en su lugar sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr ubicar su mochila en su lugar en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar su mochila en su lugar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al ubicar su mochila en su lugar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-14">
+        <div class="eyebrow">MÓDULO 01 · PLAN 14</div>
+        <h2>Cuento en acción para pedir con palabras</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular comunicar sus necesidades con autonomía respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre pedir con palabras.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir ayuda usando palabras usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita pedir ayuda usando palabras.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a pedir ayuda usando palabras.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr pedir con palabras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir ayuda usando palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-15">
+        <div class="eyebrow">MÓDULO 01 · PLAN 15</div>
+        <h2>Descubrimos el saludo diario con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover saludar y reconocer a sus compañeros en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre el saludo diario.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saludar a los compañeros al llegar usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a saludar a los compañeros al llegar.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saludar a los compañeros al llegar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que saludar a los compañeros al llegar se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-16">
+        <div class="eyebrow">MÓDULO 01 · PLAN 16</div>
+        <h2>Reto sensorial dirigido: la asamblea con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre expresar ideas en la asamblea por turnos a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a participar en la ronda de la mañana usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón participar en la ronda de la mañana prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al participar en la ronda de la mañana.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en participar en la ronda de la mañana: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para participar en la ronda de la mañana en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un reloj de juguete preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-17">
+        <div class="eyebrow">MÓDULO 01 · PLAN 17</div>
+        <h2>El calendario usando un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de reconocer los días de la semana.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar el día en el calendario usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a ubicar el día en el calendario.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento del calendario.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar el día en el calendario: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir ubicar el día en el calendario.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a ubicar el día en el calendario.</div>
+      </article>
+      <article class="plan" id="plan-18">
+        <div class="eyebrow">MÓDULO 01 · PLAN 18</div>
+        <h2>Jugamos a guardar los juguetes con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan guardar y ordenar de forma autónoma con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar los materiales al terminar usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo ordenar los materiales al terminar en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a ordenar los materiales al terminar».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar los materiales al terminar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren ordenar los materiales al terminar más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar etiquetas con nombres no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-19">
+        <div class="eyebrow">MÓDULO 01 · PLAN 19</div>
+        <h2>Juego en ronda para las normas del aula</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular respetar las normas de convivencia respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de seguir un acuerdo del grupo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir un acuerdo del grupo usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para seguir un acuerdo del grupo cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir un acuerdo del grupo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de seguir un acuerdo del grupo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-20">
+        <div class="eyebrow">MÓDULO 01 · PLAN 20</div>
+        <h2>Descubrimos esperar el turno con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover esperar su turno con paciencia en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de formar una fila y esperar el turno.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a formar una fila y esperar el turno usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede formar una fila y esperar el turno?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró formar una fila y esperar el turno.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en formar una fila y esperar el turno: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda formar una fila y esperar el turno con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de formar una fila y esperar el turno.</div>
+      </article>
+      <article class="plan" id="plan-21">
+        <div class="eyebrow">MÓDULO 01 · PLAN 21</div>
+        <h2>Desafío por parejas: elegir un rincón con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre tomar decisiones sobre su propio juego a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de elegir un rincón de juego.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a elegir un rincón de juego usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a elegir un rincón de juego sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr elegir un rincón de juego en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en elegir un rincón de juego: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al elegir un rincón de juego.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-22">
+        <div class="eyebrow">MÓDULO 01 · PLAN 22</div>
+        <h2>Reconocer su nombre usando etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de reconocer su nombre y sus pertenencias.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a identificar su nombre escrito usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita identificar su nombre escrito.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a identificar su nombre escrito.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr reconocer su nombre.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en identificar su nombre escrito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-23">
+        <div class="eyebrow">MÓDULO 01 · PLAN 23</div>
+        <h2>Jugamos al ayudante del día con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan asumir pequeñas responsabilidades con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre el ayudante del día.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea de ayudante usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a cumplir una tarea de ayudante.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea de ayudante: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que cumplir una tarea de ayudante se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-24">
+        <div class="eyebrow">MÓDULO 01 · PLAN 24</div>
+        <h2>Reto sensorial dirigido para la rutina del baño</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular incorporar la rutina de higiene respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la rutina del baño.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir los pasos de higiene usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón seguir los pasos de higiene prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al seguir los pasos de higiene.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir los pasos de higiene: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para seguir los pasos de higiene en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-25">
+        <div class="eyebrow">MÓDULO 01 · PLAN 25</div>
+        <h2>Descubrimos la merienda compartida con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover desarrollar hábitos en la comida en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre la merienda compartida.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir la merienda con orden usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a compartir la merienda con orden.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de la merienda compartida.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir la merienda con orden: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir compartir la merienda con orden.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-26">
+        <div class="eyebrow">MÓDULO 01 · PLAN 26</div>
+        <h2>Circuito guiado: transición tranquila con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre manejar las transiciones del día a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar de una actividad a otra con calma usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo pasar de una actividad a otra con calma en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a pasar de una actividad a otra con calma».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar de una actividad a otra con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren pasar de una actividad a otra con calma más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-27">
+        <div class="eyebrow">MÓDULO 01 · PLAN 27</div>
+        <h2>Ordenar sus cosas usando un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de organizar sus pertenencias.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar su mochila en su lugar usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para ubicar su mochila en su lugar cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar su mochila en su lugar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de ubicar su mochila en su lugar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-28">
+        <div class="eyebrow">MÓDULO 01 · PLAN 28</div>
+        <h2>Jugamos a pedir con palabras con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan comunicar sus necesidades con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir ayuda usando palabras usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede pedir ayuda usando palabras?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró pedir ayuda usando palabras.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir ayuda usando palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda pedir ayuda usando palabras con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un reloj de juguete preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-29">
+        <div class="eyebrow">MÓDULO 01 · PLAN 29</div>
+        <h2>Desafío por parejas para el saludo diario</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular saludar y reconocer a sus compañeros respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de saludar a los compañeros al llegar.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saludar a los compañeros al llegar usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a saludar a los compañeros al llegar sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr saludar a los compañeros al llegar en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saludar a los compañeros al llegar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al saludar a los compañeros al llegar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a saludar a los compañeros al llegar.</div>
+      </article>
+      <article class="plan" id="plan-30">
+        <div class="eyebrow">MÓDULO 01 · PLAN 30</div>
+        <h2>Descubrimos la asamblea con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover expresar ideas en la asamblea por turnos en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de participar en la ronda de la mañana.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a participar en la ronda de la mañana usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita participar en la ronda de la mañana.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a participar en la ronda de la mañana.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr la asamblea.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en participar en la ronda de la mañana: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar etiquetas con nombres no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-31">
+        <div class="eyebrow">MÓDULO 01 · PLAN 31</div>
+        <h2>Juego de mesa colectivo: el calendario con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre reconocer los días de la semana a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de ubicar el día en el calendario.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar el día en el calendario usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a ubicar el día en el calendario.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar el día en el calendario: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que ubicar el día en el calendario se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-32">
+        <div class="eyebrow">MÓDULO 01 · PLAN 32</div>
+        <h2>Guardar los juguetes usando un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de guardar y ordenar de forma autónoma.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar los materiales al terminar usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón ordenar los materiales al terminar prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al ordenar los materiales al terminar.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar los materiales al terminar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para ordenar los materiales al terminar en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de ordenar los materiales al terminar.</div>
+      </article>
+      <article class="plan" id="plan-33">
+        <div class="eyebrow">MÓDULO 01 · PLAN 33</div>
+        <h2>Jugamos a las normas del aula con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan respetar las normas de convivencia con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre las normas del aula.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir un acuerdo del grupo usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a seguir un acuerdo del grupo.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de las normas del aula.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir un acuerdo del grupo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir seguir un acuerdo del grupo.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-34">
+        <div class="eyebrow">MÓDULO 01 · PLAN 34</div>
+        <h2>Circuito guiado para esperar el turno</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular esperar su turno con paciencia respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre esperar el turno.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a formar una fila y esperar el turno usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo formar una fila y esperar el turno en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a formar una fila y esperar el turno».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en formar una fila y esperar el turno: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren formar una fila y esperar el turno más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-35">
+        <div class="eyebrow">MÓDULO 01 · PLAN 35</div>
+        <h2>Descubrimos elegir un rincón con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover tomar decisiones sobre su propio juego en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre elegir un rincón.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a elegir un rincón de juego usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para elegir un rincón de juego cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en elegir un rincón de juego: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de elegir un rincón de juego.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-36">
+        <div class="eyebrow">MÓDULO 01 · PLAN 36</div>
+        <h2>Exploración libre acompañada: reconocer su nombre con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre reconocer su nombre y sus pertenencias a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a identificar su nombre escrito usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede identificar su nombre escrito?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró identificar su nombre escrito.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en identificar su nombre escrito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda identificar su nombre escrito con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-37">
+        <div class="eyebrow">MÓDULO 01 · PLAN 37</div>
+        <h2>El ayudante del día usando un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de asumir pequeñas responsabilidades.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a cumplir una tarea de ayudante usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a cumplir una tarea de ayudante sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr cumplir una tarea de ayudante en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en cumplir una tarea de ayudante: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al cumplir una tarea de ayudante.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-38">
+        <div class="eyebrow">MÓDULO 01 · PLAN 38</div>
+        <h2>Jugamos a la rutina del baño con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan incorporar la rutina de higiene con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir los pasos de higiene usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita seguir los pasos de higiene.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a seguir los pasos de higiene.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr la rutina del baño.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir los pasos de higiene: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article>
+      <article class="plan" id="plan-39">
+        <div class="eyebrow">MÓDULO 01 · PLAN 39</div>
+        <h2>Juego de mesa colectivo para la merienda compartida</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular desarrollar hábitos en la comida respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de compartir la merienda con orden.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a compartir la merienda con orden usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a compartir la merienda con orden.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en compartir la merienda con orden: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que compartir la merienda con orden se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Si un niño se frustra, baja la dificultad un escalón en lugar de insistir con lo mismo.</div>
+      </article>
+      <article class="plan" id="plan-40">
+        <div class="eyebrow">MÓDULO 01 · PLAN 40</div>
+        <h2>Descubrimos transición tranquila con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover manejar las transiciones del día en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de pasar de una actividad a otra con calma.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pasar de una actividad a otra con calma usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón pasar de una actividad a otra con calma prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al pasar de una actividad a otra con calma.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pasar de una actividad a otra con calma: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para pasar de una actividad a otra con calma en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Ten un reloj de juguete preparado de antemano: la clase fluye mejor sin pausas para buscar materiales.</div>
+      </article>
+      <article class="plan" id="plan-41">
+        <div class="eyebrow">MÓDULO 01 · PLAN 41</div>
+        <h2>Estaciones de juego: ordenar sus cosas con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre organizar sus pertenencias a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Fortalece la capacidad de ubicar su mochila en su lugar.</li><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, música suave, una canción conocida, stickers</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar su mochila en su lugar usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a ubicar su mochila en su lugar.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de ordenar sus cosas.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar su mochila en su lugar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir ubicar su mochila en su lugar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Respeta los tiempos: algunos niños necesitan observar varias veces antes de animarse a ubicar su mochila en su lugar.</div>
+      </article>
+      <article class="plan" id="plan-42">
+        <div class="eyebrow">MÓDULO 01 · PLAN 42</div>
+        <h2>Pedir con palabras usando etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de comunicar sus necesidades con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Desarrolla la atención, la observación y la concentración.</li><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, fichas de cartón, cinta de colores, hojas blancas</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a pedir ayuda usando palabras usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo pedir ayuda usando palabras en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a pedir ayuda usando palabras».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en pedir ayuda usando palabras: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren pedir ayuda usando palabras más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Convierte el orden final en parte del juego para que guardar etiquetas con nombres no sea una pelea.</div>
+      </article>
+      <article class="plan" id="plan-43">
+        <div class="eyebrow">MÓDULO 01 · PLAN 43</div>
+        <h2>Jugamos al saludo diario con un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan saludar y reconocer a sus compañeros con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la autonomía y la confianza en sí mismo.</li><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre el saludo diario.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, una caja sorpresa, stickers, crayones</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a saludar a los compañeros al llegar usando un títere guía.</li><li>Sienta a los niños en ronda para que todos se vean las caras y puedan participar por turnos.</li><li>Presenta un títere guía en el centro y explica que lo usaremos para saludar a los compañeros al llegar cuando llegue nuestro turno.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Comienza tú dando el ejemplo y pasa el turno al niño de al lado siguiendo el círculo.</li><li>Anima a quien participa y recuerda a los demás esperar y mirar al compañero que tiene el turno.</li><li>Cuando todos pasaron, repite una ronda más rápida para afianzar lo aprendido con un títere guía.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en saludar a los compañeros al llegar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>En casa se puede hacer con materiales del hogar en lugar de un títere guía, manteniendo la consigna de saludar a los compañeros al llegar.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Usa una canción o señal fija para marcar inicio y cierre; los niños se anticipan y se calman.</div>
+      </article>
+      <article class="plan" id="plan-44">
+        <div class="eyebrow">MÓDULO 01 · PLAN 44</div>
+        <h2>Exploración libre acompañada para la asamblea</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular expresar ideas en la asamblea por turnos respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Favorece el trabajo en equipo y el respeto de los turnos.</li><li>Amplía el vocabulario y la comprensión sobre la asamblea.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, hojas blancas, crayones, una campana o pandereta</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a participar en la ronda de la mañana usando un reloj de juguete.</li><li>Dispón un reloj de juguete sobre una manta o mesa baja y deja que los niños lo exploren con calma unos minutos.</li><li>Observa sin interrumpir y luego propón un reto suave: «¿quién puede participar en la ronda de la mañana?».</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Haz preguntas abiertas mientras juegan: «¿qué pasa si…?», «¿cómo lo hiciste?».</li><li>Recoge una idea de algún niño y proponla a todo el grupo para probarla juntos.</li><li>Guarda el material en ronda nombrando con los niños lo que cada uno logró participar en la ronda de la mañana.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en participar en la ronda de la mañana: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Si hay poco espacio, reduce el grupo y trabaja por turnos para que cada niño pueda participar en la ronda de la mañana con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Evita corregir de más; deja que el niño pruebe y descubra su propia manera de participar en la ronda de la mañana.</div>
+      </article>
+      <article class="plan" id="plan-45">
+        <div class="eyebrow">MÓDULO 01 · PLAN 45</div>
+        <h2>Descubrimos el calendario con un calendario de tela</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover reconocer los días de la semana en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Amplía el vocabulario y la comprensión sobre el calendario.</li><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, una campana o pandereta, un cesto</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Reúne al grupo y muestra un objeto sorpresa relacionado con la clase para despertar la curiosidad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ubicar el día en el calendario usando un calendario de tela.</li><li>Forma parejas mezclando niños que no suelen jugar juntos para fomentar la cooperación.</li><li>Entrega un calendario de tela a cada pareja y plantea el reto: juntos van a ubicar el día en el calendario sin soltarse de la mano.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Da una primera prueba libre para que se pongan de acuerdo en cómo lo harán.</li><li>Lanza dos o tres rondas, cambiando una regla cada vez para sostener el interés.</li><li>Reúne a las parejas y pregunta cómo se ayudaron para lograr ubicar el día en el calendario en equipo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ubicar el día en el calendario: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Haz una ronda corta donde cada niño muestre con un gesto cómo se sintió en la actividad.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para un niño que necesita más apoyo, acompáñalo guiando suavemente el movimiento al ubicar el día en el calendario.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Mantén grupos pequeños cuando la actividad es nueva; luego puedes ampliar.</div>
+      </article>
+      <article class="plan" id="plan-46">
+        <div class="eyebrow">MÓDULO 01 · PLAN 46</div>
+        <h2>Cuento en acción: guardar los juguetes con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Que el niño logre guardar y ordenar de forma autónoma a través del juego.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Promueve la expresión de ideas, sensaciones y emociones.</li><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, música suave, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Invita a los niños a respirar hondo dos veces y a mirar el material que usaremos hoy.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a ordenar los materiales al terminar usando etiquetas con nombres.</li><li>Reúne al grupo y cuenta una breve historia cuyo protagonista necesita ordenar los materiales al terminar.</li><li>En los momentos clave del relato, entrega etiquetas con nombres y pide a los niños ayudar al personaje a ordenar los materiales al terminar.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Haz pausas para que predigan qué pasará y dramaticen la acción con su cuerpo.</li><li>Avanza el cuento conectando cada escena con algo que los niños acaban de hacer.</li><li>Termina la historia y conversen qué aprendió el personaje al lograr guardar los juguetes.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en ordenar los materiales al terminar: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Conversa en grupo sobre cómo se ayudaron y qué les gustaría volver a hacer otro día.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Aumenta la dificultad cambiando etiquetas con nombres por una versión más pequeña o agregando una regla nueva.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Prepara una versión más fácil y una más difícil para adaptar sobre la marcha.</div>
+      </article>
+      <article class="plan" id="plan-47">
+        <div class="eyebrow">MÓDULO 01 · PLAN 47</div>
+        <h2>Las normas del aula usando un títere guía</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>4 a 5 años</b></div>
+          <div><span>DURACIÓN</span><b>40 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Desarrollar la capacidad de respetar las normas de convivencia.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Refuerza el gusto por aprender a través del juego.</li><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un títere guía, fichas de cartón, cinta de colores, una canción conocida</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Abre con una pregunta sencilla y deja que varios niños respondan antes de empezar la actividad.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a seguir un acuerdo del grupo usando un títere guía.</li><li>Reúne a los niños alrededor de una mesa o en el piso y presenta un títere guía como un juego nuevo.</li><li>Explica una sola regla clara: por turnos, cada uno va a seguir un acuerdo del grupo.</li><li>Da tiempo a los más tímidos: ofréceles participar primero observando y luego haciendo.</li><li>Juega una ronda de práctica sin ganadores para que todos entiendan la mecánica.</li><li>Acompaña los turnos y aprovecha cada jugada para nombrar lo que el niño está aprendiendo.</li><li>Al cerrar, repasen juntos qué hicieron y guarden un títere guía entre todos con cuidado.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en seguir un acuerdo del grupo: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Reúne a los niños en ronda y pregunta qué fue lo que más les gustó de la clase de hoy.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión tranquila: hazlo en silencio o con música suave para que seguir un acuerdo del grupo se viva con calma.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Habla a la altura de los niños y con frases cortas para que la consigna quede clara.</div>
+      </article>
+      <article class="plan" id="plan-48">
+        <div class="eyebrow">MÓDULO 01 · PLAN 48</div>
+        <h2>Jugamos a esperar el turno con un reloj de juguete</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>5 a 6 años</b></div>
+          <div><span>DURACIÓN</span><b>45 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Favorecer que los niños puedan esperar su turno con paciencia con autonomía.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Potencia la creatividad y la resolución de pequeños retos.</li><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un reloj de juguete, una caja sorpresa, stickers, fichas de cartón</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Haz una breve dinámica de nombres o de imitación para que el grupo se conecte y se relaje.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a formar una fila y esperar el turno usando un reloj de juguete.</li><li>Prepara un reloj de juguete en una bandeja y reúne a un grupo pequeño para que todos alcancen el material.</li><li>Invita a tocar y observar primero, y luego propón formar una fila y esperar el turno prestando atención a lo que sienten.</li><li>Aprovecha para nombrar en voz alta lo que cada niño hace bien, por pequeño que sea.</li><li>Acompaña con preguntas sobre texturas, sonidos o colores que aparecen al formar una fila y esperar el turno.</li><li>Suma una variante (con los ojos cerrados, más lento, en silencio) para afinar la percepción.</li><li>Cierra compartiendo en ronda qué fue lo que más les llamó la atención de un reloj de juguete.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en formar una fila y esperar el turno: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Cierra con una canción de calma y pide a cada niño nombrar una cosa que aprendió.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Versión al aire libre: lleva la actividad al patio y aprovecha el espacio para formar una fila y esperar el turno en grande.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Refuerza el esfuerzo y no solo el resultado: «me gustó cómo lo intentaste».</div>
+      </article>
+      <article class="plan" id="plan-49">
+        <div class="eyebrow">MÓDULO 01 · PLAN 49</div>
+        <h2>Estaciones de juego para elegir un rincón</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>2 a 3 años</b></div>
+          <div><span>DURACIÓN</span><b>30 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Estimular tomar decisiones sobre su propio juego respetando el ritmo de cada niño.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Consolida hábitos positivos y la buena convivencia.</li><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de elegir un rincón de juego.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>un calendario de tela, hojas blancas, crayones, cinta de colores</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Recibe a los niños con una canción de bienvenida y siéntalos en ronda para presentar el tema del día.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a elegir un rincón de juego usando un calendario de tela.</li><li>Organiza el aula en tres estaciones y explica que en cada una los niños van a elegir un rincón de juego.</li><li>Coloca un calendario de tela en cada estación y demuestra una vez, despacio, nombrando cada paso en voz alta.</li><li>Antes de empezar, recuerda con los niños el acuerdo de cuidar el material y a los compañeros.</li><li>Divide al grupo en equipos pequeños; cada equipo arranca en una estación y rota cuando suene la señal.</li><li>Recorre estación por estación dando pistas concretas y celebrando cada intento de elegir un rincón.</li><li>Detén la rotación y pide a cada equipo que muestre a los demás lo que descubrió con un calendario de tela.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en elegir un rincón de juego: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Invita a respirar despacio y a estirarse, repasando con palabras simples lo que hicieron.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Para los más pequeños (2-3 años), simplifica: deja que primero exploren un calendario de tela libremente antes de pedir elegir un rincón de juego.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Demuestra siempre la consigna con tu propio cuerpo antes de pedir que los niños lo hagan.</div>
+      </article>
+      <article class="plan" id="plan-50">
+        <div class="eyebrow">MÓDULO 01 · PLAN 50</div>
+        <h2>Descubrimos reconocer su nombre con etiquetas con nombres</h2>
+        <div class="ficha">
+          <div><span>EDAD</span><b>3 a 4 años</b></div>
+          <div><span>DURACIÓN</span><b>35 min</b></div>
+          <div><span>ÁREA</span><b>Hábitos, autonomía y convivencia</b></div>
+        </div>
+        <div class="box"><div class="bl">OBJETIVO DE LA CLASE</div>Promover reconocer su nombre y sus pertenencias en un clima de juego y confianza.</div>
+        <div class="two">
+          <div><div class="lbl">APRENDIZAJES</div><ul class="dot"><li>Estimula la memoria y la capacidad de seguir consignas.</li><li>Fortalece la capacidad de identificar su nombre escrito.</li><li>Desarrolla la atención, la observación y la concentración.</li></ul></div>
+          <div><div class="lbl">MATERIALES</div><p>etiquetas con nombres, una campana o pandereta, un cesto, una caja sorpresa</p></div>
+        </div>
+        <div class="lbl">INICIO · ACOGIDA</div><p>Comienza con un juego corto de activación (saludo con las manos, mover el cuerpo) para captar la atención.</p>
+        <div class="lbl">DESARROLLO PASO A PASO</div><ol class="steps"><li>Presenta la propuesta del día: hoy vamos a identificar su nombre escrito usando etiquetas con nombres.</li><li>Arma un recorrido en el piso con etiquetas con nombres y marca con claridad el punto de inicio y el de llegada.</li><li>Camina el circuito junto a los niños una primera vez, mostrando cómo identificar su nombre escrito en cada tramo.</li><li>Marca con una canción corta el momento de cambio de actividad para ordenar la transición.</li><li>Invita a pasar de a uno o en parejas, acompañando con la voz: «ahora sí, vas a identificar su nombre escrito».</li><li>Aumenta el desafío en la segunda vuelta (más despacio, con una mano, con los ojos en la meta).</li><li>Cierra el circuito con un aplauso para cada niño que completó el recorrido a su ritmo.</li></ol>
+        <div class="lbl">ACTIVIDAD PRINCIPAL</div><p>El momento central es cuando los niños se concentran en identificar su nombre escrito: ese es el punto donde más prueban, se equivocan y disfrutan. Dales tiempo de sobra y refuerza cada pequeño logro.</p>
+        <div class="lbl">CIERRE</div><p>Termina felicitando al grupo por el esfuerzo y guardando juntos los materiales.</p>
+        <div class="box soft"><div class="bl">VARIACIÓN / ADAPTACIÓN</div>Con niños de 5-6 años, suma un reto: que logren identificar su nombre escrito más rápido o siguiendo una secuencia de dos pasos.</div>
+        <div class="box soft"><div class="bl">TIP DEL DOCENTE</div>Nombra en voz alta lo que cada niño logra; el reconocimiento sostiene la motivación.</div>
+      </article></main>
+  </div>
+</body></html>

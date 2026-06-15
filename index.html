@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área de Miembros · Aula Creativa</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:#F7F9FC;color:#2D2A45;line-height:1.55}
+  header{background:#fff;border-bottom:1px solid #E9E4EF;padding:20px 22px;position:sticky;top:0;z-index:5}
+  header .wrap{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
+  .logo .m{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#7C77D9,#EC7AA8);
+       color:#fff;display:grid;place-items:center;font-size:1.1rem}
+  .badge-mem{background:#EAF8F6;color:#21a99c;font-weight:800;padding:7px 14px;border-radius:30px;font-size:.82rem}
+  .hero{max-width:1140px;margin:0 auto;padding:40px 22px 10px}
+  .hero h1{font-size:2rem;margin-bottom:6px}
+  .hero p{color:#5B5773;font-weight:600;max-width:640px}
+  .grid{max-width:1140px;margin:0 auto;padding:26px 22px 70px;display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+  .card{background:#fff;border:1px solid #E9E4EF;border-top:4px solid var(--ac);border-radius:16px;
+        padding:22px;box-shadow:0 6px 18px rgba(45,42,69,.05);transition:transform .2s,box-shadow .2s;position:relative}
+  .card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(45,42,69,.12)}
+  .card .badge{width:40px;height:40px;border-radius:12px;background:var(--ac);color:#fff;
+        display:grid;place-items:center;font-weight:800;font-size:1.1rem;margin-bottom:12px}
+  .card h3{font-size:1.16rem;margin-bottom:4px}
+  .card p{color:#5B5773;font-size:.9rem;font-weight:600;margin-bottom:18px;min-height:38px}
+  .acts{display:flex;gap:10px}
+  .acts a{flex:1;text-align:center;padding:11px;border-radius:30px;font-weight:800;font-size:.92rem;text-decoration:none;transition:.15s}
+  .acts .leer{background:var(--ac);color:#fff}
+  .acts .leer:hover{filter:brightness(.94)}
+  .acts .pdf{background:#fff;border:2px solid var(--ac);color:var(--ac)}
+  .acts .pdf:hover{background:color-mix(in srgb,var(--ac) 10%,#fff)}
+  .card.off{opacity:.45;pointer-events:none}
+  .bonos-sec{max-width:1140px;margin:0 auto;padding:10px 22px 70px}
+  .bonos-sec h2{font-size:1.5rem;margin-bottom:4px}
+  .bonos-sec .sub{color:#5B5773;font-weight:600;margin-bottom:22px}
+  .bonos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+  .bono-card{background:#fff;border:1px solid #E9E4EF;border-radius:16px;padding:22px;
+        box-shadow:0 6px 18px rgba(45,42,69,.05);display:flex;flex-direction:column;
+        border-top:4px solid #C879C2;transition:transform .2s,box-shadow .2s}
+  .bono-card:hover{transform:translateY(-5px);box-shadow:0 14px 34px rgba(45,42,69,.12)}
+  .bono-card .emo{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#7C77D9,#EC7AA8);
+        display:grid;place-items:center;font-size:1.4rem;margin-bottom:12px}
+  .bono-card h3{font-size:1.1rem;margin-bottom:4px}
+  .bono-card p{color:#5B5773;font-size:.9rem;font-weight:600;margin-bottom:18px;flex:1}
+  .bono-card a{text-align:center;padding:11px;border-radius:30px;font-weight:800;font-size:.92rem;
+        text-decoration:none;background:linear-gradient(135deg,#7C77D9,#EC7AA8);color:#fff;transition:.15s}
+  .bono-card a:hover{filter:brightness(.95)}
+  .sec-divider{max-width:1140px;margin:0 auto;padding:0 22px}
+  .sec-divider hr{border:none;border-top:1px solid #E9E4EF}
+</style></head><body>
+  <header><div class="wrap">
+    <div class="logo"><span class="m">🎨</span> Aula Creativa</div>
+    <span class="badge-mem">🔓 Área de Miembros</span>
+  </div></header>
+  <section class="hero">
+    <h1>¡Bienvenida! Aquí está todo tu material 🎉</h1>
+    <p>+1000 planes de clase organizados en 20 módulos. Elige un módulo y <b>léelo online</b> o <b>descarga el PDF</b> para imprimir.</p>
+  </section>
+  <section class="grid">
+      <div class="card " style="--ac:#FF8E72">
+        <div class="badge">01</div>
+        <h3>Fundamentos y Rutinas</h3>
+        <p>Adaptación, hábitos y primeros días</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-01.html">📖 Leer</a>
+          <a class="pdf" href="pdf/01-fundamentos-rutinas.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#5FB0E5">
+        <div class="badge">02</div>
+        <h3>Lenguaje y Comunicación</h3>
+        <p>Vocabulario, escucha y expresión oral</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-02.html">📖 Leer</a>
+          <a class="pdf" href="pdf/02-lenguaje-comunicacion.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#54C3B0">
+        <div class="badge">03</div>
+        <h3>Desarrollo Motor</h3>
+        <p>Motricidad gruesa y movimiento</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-03.html">📖 Leer</a>
+          <a class="pdf" href="pdf/03-desarrollo-motor.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#F5A742">
+        <div class="badge">04</div>
+        <h3>Motricidad Fina</h3>
+        <p>Coordinación y pinza para preescritura</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-04.html">📖 Leer</a>
+          <a class="pdf" href="pdf/04-motricidad-fina.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#7C77D9">
+        <div class="badge">05</div>
+        <h3>Pensamiento Lógico-Matemático</h3>
+        <p>Números, formas y razonamiento inicial</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-05.html">📖 Leer</a>
+          <a class="pdf" href="pdf/05-logico-matematico.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#EC7AA8">
+        <div class="badge">06</div>
+        <h3>Desarrollo Socioemocional</h3>
+        <p>Emociones, empatía y convivencia</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-06.html">📖 Leer</a>
+          <a class="pdf" href="pdf/06-socioemocional.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#4FA8A0">
+        <div class="badge">07</div>
+        <h3>Exploración del Entorno</h3>
+        <p>Ciencias, descubrimiento e indagación</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-07.html">📖 Leer</a>
+          <a class="pdf" href="pdf/07-exploracion-entorno.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#F2924B">
+        <div class="badge">08</div>
+        <h3>Arte, Música y Expresión</h3>
+        <p>Creatividad, ritmo y manualidades</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-08.html">📖 Leer</a>
+          <a class="pdf" href="pdf/08-arte-musica.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#C879C2">
+        <div class="badge">09</div>
+        <h3>Juego Simbólico y Dramático</h3>
+        <p>Roles, imaginación y juego libre</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-09.html">📖 Leer</a>
+          <a class="pdf" href="pdf/09-juego-simbolico.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#6BA7DC">
+        <div class="badge">10</div>
+        <h3>Inclusión y Públicos Especiales</h3>
+        <p>Adaptaciones para TEA y necesidades diversas</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-10.html">📖 Leer</a>
+          <a class="pdf" href="pdf/10-inclusion.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#E58B6B">
+        <div class="badge">11</div>
+        <h3>Lectoescritura Inicial</h3>
+        <p>Aprestamiento y conciencia fonológica</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-11.html">📖 Leer</a>
+          <a class="pdf" href="pdf/11-lectoescritura.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#69B6C9">
+        <div class="badge">12</div>
+        <h3>Estimulación Sensorial</h3>
+        <p>Texturas, sonidos y experiencias sensoriales</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-12.html">📖 Leer</a>
+          <a class="pdf" href="pdf/12-sensorial.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#E089A0">
+        <div class="badge">13</div>
+        <h3>Valores y Convivencia</h3>
+        <p>Respeto, cooperación y buenos hábitos</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-13.html">📖 Leer</a>
+          <a class="pdf" href="pdf/13-valores.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#62BFA0">
+        <div class="badge">14</div>
+        <h3>Hábitos y Cuidado Personal</h3>
+        <p>Higiene, alimentación y autocuidado</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-14.html">📖 Leer</a>
+          <a class="pdf" href="pdf/14-habitos.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#F0A24E">
+        <div class="badge">15</div>
+        <h3>Identidad y Autonomía</h3>
+        <p>Conocerse, decidir y hacer solo</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-15.html">📖 Leer</a>
+          <a class="pdf" href="pdf/15-identidad.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#5EB87A">
+        <div class="badge">16</div>
+        <h3>Naturaleza y Medio Ambiente</h3>
+        <p>Cuidado del planeta y vida natural</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-16.html">📖 Leer</a>
+          <a class="pdf" href="pdf/16-naturaleza.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#9B86D6">
+        <div class="badge">17</div>
+        <h3>Cuentos y Narración</h3>
+        <p>Literatura, narración y comprensión</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-17.html">📖 Leer</a>
+          <a class="pdf" href="pdf/17-cuentos.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#4FB0C7">
+        <div class="badge">18</div>
+        <h3>Psicomotricidad y Aire Libre</h3>
+        <p>Juego activo y exploración del espacio</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-18.html">📖 Leer</a>
+          <a class="pdf" href="pdf/18-psicomotricidad.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#EE8E6E">
+        <div class="badge">19</div>
+        <h3>Fechas y Celebraciones</h3>
+        <p>Efemérides, estaciones y tradiciones</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-19.html">📖 Leer</a>
+          <a class="pdf" href="pdf/19-celebraciones.pdf" download>⬇ PDF</a>
+        </div>
+      </div>
+      <div class="card " style="--ac:#7AA9DE">
+        <div class="badge">20</div>
+        <h3>Pensamiento Creativo (STEAM)</h3>
+        <p>Construir, experimentar y resolver</p>
+        <div class="acts">
+          <a class="leer" href="lectura/modulo-20.html">📖 Leer</a>
+          <a class="pdf" href="pdf/20-steam.pdf" download>⬇ PDF</a>
+        </div>
+      </div></section>
+  <div class="sec-divider"><hr></div>
+  <section class="bonos-sec">
+    <h2>🎁 Tus bonos de regalo</h2>
+    <p class="sub">Recursos extra incluidos en tu compra. Descárgalos cuando quieras.</p>
+    <div class="bonos-grid">
+      <div class="bono-card">
+        <div class="emo">🖍️</div>
+        <h3>Dibujos para Colorear</h3>
+        <p>Una colección de dibujos listos para imprimir y dar rienda suelta a la creatividad.</p>
+        <a href="https://drive.google.com/drive/folders/1AzaOOMREGIBKLTR3i1huI3ZrEMVwDA0s" target="_blank" rel="noopener">⬇ Descargar</a>
+      </div>
+      <div class="bono-card">
+        <div class="emo">🏅</div>
+        <h3>Modelos de Certificados</h3>
+        <p>Plantillas de certificados editables para premiar los logros de los pequeños.</p>
+        <a href="https://drive.google.com/drive/folders/1QV1py4_bDcMYcx7PBeBUexiytIKmWio4" target="_blank" rel="noopener">⬇ Descargar</a>
+      </div>
+      <div class="bono-card">
+        <div class="emo">✏️</div>
+        <h3>Ejercicios de Caligrafía</h3>
+        <p>Práctica de escritura y trazos para desarrollar la motricidad fina.</p>
+        <a href="https://drive.google.com/file/d/1EeeBZIcoWQ7TpFQGoFbTyYkVoxG4XxLB/view" target="_blank" rel="noopener">⬇ Descargar</a>
+      </div>
+      <div class="bono-card">
+        <div class="emo">📘</div>
+        <h3>Guía de Manejo Educación Infantil</h3>
+        <p>Recursos prácticos para acompañar y guiar el aprendizaje en el aula.</p>
+        <a href="https://drive.google.com/file/d/1x5me5ZKqY8ExgbMaeGk0IEmI2wK-bwUU/view" target="_blank" rel="noopener">⬇ Descargar</a>
+      </div>
+      <div class="bono-card">
+        <div class="emo">📓</div>
+        <h3>Cuaderno de Actividades Infantiles</h3>
+        <p>Cuaderno completo con actividades variadas para reforzar el aprendizaje.</p>
+        <a href="https://drive.google.com/file/d/10CG3OP-pBWSNGPKic2RKTqX6_QIlW45D/view" target="_blank" rel="noopener">⬇ Descargar</a>
+      </div></div>
+  </section>
+  <footer>© Aula Creativa · Acceso vitalicio · Educación Inicial</footer>
+</body></html>
